@@ -1,51 +1,423 @@
-ticker
-AAPL
-MSFT
-GOOGL
-AMZN
-NVDA
-META
-TSLA
-BRK-B
-JPM
-JNJ
-V
-PG
-UNH
-HD
-MA
-XOM
-CVX
-LLY
-ABBV
-MRK
-PEP
-COST
-AVGO
-TMO
-MCD
-ACN
-BAC
-WFC
-DHR
-NEE
-TXN
-UNP
-PM
-RTX
-HON
-LOW
-UPS
-SPGI
-INTU
-IBM
-AMAT
-QCOM
-CAT
-GS
-BLK
-DE
-GE
-AMGN
-ISRG
-ADI
+stock	sector
+BEL	CPSE Index
+COALINDIA	CPSE Index
+COCHINSHIP	CPSE Index
+NBCC	CPSE Index
+NHPC	CPSE Index
+NLCINDIA	CPSE Index
+NTPC	CPSE Index
+OIL	CPSE Index
+ONGC	CPSE Index
+POWERGRID	CPSE Index
+SJVN	CPSE Index
+ASHOKLEY	Auo Index
+BAJAJ-AUTO	Auo Index
+BHARATFORG	Auo Index
+BOSCHLTD	Auo Index
+EICHERMOT	Auo Index
+EXIDEIND	Auo Index
+HEROMOTOCO	Auo Index
+M&M	Auo Index
+MARUTI	Auo Index
+MOTHERSON	Auo Index
+SONACOMS	Auo Index
+TIINDIA	Auo Index
+TMPV	Auo Index
+TVSMOTOR	Auo Index
+UNOMINDA	Auo Index
+AUBANK	Bank Index
+AXISBANK	Bank Index
+BANKBARODA	Bank Index
+CANBK	Bank Index
+FEDERALBNK	Bank Index
+HDFCBANK	Bank Index
+ICICIBANK	Bank Index
+IDFCFIRSTB	Bank Index
+INDUSINDBK	Bank Index
+KOTAKBANK	Bank Index
+PNB	Bank Index
+SBIN	Bank Index
+UNIONBANK	Bank Index
+YESBANK	Bank Index
+ADANIENSOL	Commodities Index
+ADANIGREEN	Commodities Index
+ADANIPOWER	Commodities Index
+AMBUJACEM	Commodities Index
+APLAPOLLO	Commodities Index
+BPCL	Commodities Index
+COALINDIA	Commodities Index
+GRASIM	Commodities Index
+HINDALCO	Commodities Index
+HINDPETRO	Commodities Index
+IOC	Commodities Index
+JINDALSTEL	Commodities Index
+JSWENERGY	Commodities Index
+JSWSTEEL	Commodities Index
+NHPC	Commodities Index
+NMDC	Commodities Index
+NTPC	Commodities Index
+OIL	Commodities Index
+ONGC	Commodities Index
+PIDILITIND	Commodities Index
+PIIND	Commodities Index
+RELIANCE	Commodities Index
+SHREECEM	Commodities Index
+SRF	Commodities Index
+TATAPOWER	Commodities Index
+TATASTEEL	Commodities Index
+TORNTPOWER	Commodities Index
+ULTRACEMCO	Commodities Index
+UPL	Commodities Index
+VEDL	Commodities Index
+AMBER	Consumer Durables Index
+BATAINDIA	Consumer Durables Index
+BLUESTARCO	Consumer Durables Index
+CENTURYPLY	Consumer Durables Index
+CERA	Consumer Durables Index
+CROMPTON	Consumer Durables Index
+DIXON	Consumer Durables Index
+HAVELLS	Consumer Durables Index
+KAJARIACER	Consumer Durables Index
+KALYANKJIL	Consumer Durables Index
+PGEL	Consumer Durables Index
+TITAN	Consumer Durables Index
+VGUARD	Consumer Durables Index
+VOLTAS	Consumer Durables Index
+WHIRLPOOL	Consumer Durables Index
+ADANIPOWER	Consumption Index
+APOLLOHOSP	Consumption Index
+ASIANPAINT	Consumption Index
+BAJAJ-AUTO	Consumption Index
+BHARTIARTL	Consumption Index
+BRITANNIA	Consumption Index
+DIXON	Consumption Index
+DLF	Consumption Index
+DMART	Consumption Index
+EICHERMOT	Consumption Index
+ETERNAL	Consumption Index
+GODREJCP	Consumption Index
+HAVELLS	Consumption Index
+HEROMOTOCO	Consumption Index
+HINDUNILVR	Consumption Index
+INDHOTEL	Consumption Index
+INDIGO	Consumption Index
+ITC	Consumption Index
+M&M	Consumption Index
+MARUTI	Consumption Index
+MAXHEALTH	Consumption Index
+NAUKRI	Consumption Index
+NESTLEIND	Consumption Index
+TATACONSUM	Consumption Index
+TATAPOWER	Consumption Index
+TITAN	Consumption Index
+TRENT	Consumption Index
+TVSMOTOR	Consumption Index
+UNITDSPR	Consumption Index
+VBL	Consumption Index
+ABB	Energy Index
+ADANIENSOL	Energy Index
+ADANIGREEN	Energy Index
+ADANIPOWER	Energy Index
+AEGISLOG	Energy Index
+ATGL	Energy Index
+BHEL	Energy Index
+BPCL	Energy Index
+CASTROLIND	Energy Index
+CESC	Energy Index
+CGPOWER	Energy Index
+COALINDIA	Energy Index
+ENRIN	Energy Index
+GAIL	Energy Index
+GSPL	Energy Index
+GUJGASLTD	Energy Index
+GVT&D	Energy Index
+HINDPETRO	Energy Index
+IGL	Energy Index
+INOXWIND	Energy Index
+IOC	Energy Index
+JPPOWER	Energy Index
+JSWENERGY	Energy Index
+MGL	Energy Index
+NHPC	Energy Index
+NLCINDIA	Energy Index
+NTPC	Energy Index
+OIL	Energy Index
+ONGC	Energy Index
+PETRONET	Energy Index
+POWERGRID	Energy Index
+POWERINDIA	Energy Index
+RELIANCE	Energy Index
+RPOWER	Energy Index
+SIEMENS	Energy Index
+SJVN	Energy Index
+SUZLON	Energy Index
+TATAPOWER	Energy Index
+THERMAX	Energy Index
+TORNTPOWER	Energy Index
+BRITANNIA	FMCG index
+COLPAL	FMCG index
+DABUR	FMCG index
+EMAMILTD	FMCG index
+GODREJCP	FMCG index
+HINDUNILVR	FMCG index
+ITC	FMCG index
+MARICO	FMCG index
+NESTLEIND	FMCG index
+PATANJALI	FMCG index
+RADICO	FMCG index
+TATACONSUM	FMCG index
+UBL	FMCG index
+UNITDSPR	FMCG index
+VBL	FMCG index
+AXISBANK	Financial Services Index
+BAJAJFINSV	Financial Services Index
+BAJFINANCE	Financial Services Index
+BSE	Financial Services Index
+CHOLAFIN	Financial Services Index
+HDFCBANK	Financial Services Index
+HDFCLIFE	Financial Services Index
+ICICIBANK	Financial Services Index
+ICICIGI	Financial Services Index
+ICICIPRULI	Financial Services Index
+JIOFIN	Financial Services Index
+KOTAKBANK	Financial Services Index
+LICHSGFIN	Financial Services Index
+MUTHOOTFIN	Financial Services Index
+PFC	Financial Services Index
+RECLTD	Financial Services Index
+SBICARD	Financial Services Index
+SBILIFE	Financial Services Index
+SBIN	Financial Services Index
+SHRIRAMFIN	Financial Services Index
+ABBOTINDIA	Healthcare Index
+ALKEM	Healthcare Index
+APOLLOHOSP	Healthcare Index
+AUROPHARMA	Healthcare Index
+BIOCON	Healthcare Index
+CIPLA	Healthcare Index
+DIVISLAB	Healthcare Index
+DRREDDY	Healthcare Index
+FORTIS	Healthcare Index
+GLENMARK	Healthcare Index
+IPCALAB	Healthcare Index
+LAURUSLABS	Healthcare Index
+LUPIN	Healthcare Index
+MANKIND	Healthcare Index
+MAXHEALTH	Healthcare Index
+PPLPHARMA	Healthcare Index
+SUNPHARMA	Healthcare Index
+SYNGENE	Healthcare Index
+TORNTPHARM	Healthcare Index
+ZYDUSLIFE	Healthcare Index
+COFORGE	IT Index
+HCLTECH	IT Index
+INFY	IT Index
+LTM	IT Index
+MPHASIS	IT Index
+OFSS	IT Index
+PERSISTENT	IT Index
+TCS	IT Index
+TECHM	IT Index
+WIPRO	IT Index
+ADANIGREEN	Infrastructure Index
+ADANIPORTS	Infrastructure Index
+AMBUJACEM	Infrastructure Index
+APOLLOHOSP	Infrastructure Index
+ASHOKLEY	Infrastructure Index
+BHARATFORG	Infrastructure Index
+BHARTIARTL	Infrastructure Index
+BPCL	Infrastructure Index
+CGPOWER	Infrastructure Index
+CUMMINSIND	Infrastructure Index
+DLF	Infrastructure Index
+GAIL	Infrastructure Index
+GODREJPROP	Infrastructure Index
+GRASIM	Infrastructure Index
+HINDPETRO	Infrastructure Index
+INDHOTEL	Infrastructure Index
+INDIGO	Infrastructure Index
+INDUSTOWER	Infrastructure Index
+IOC	Infrastructure Index
+LT	Infrastructure Index
+MAXHEALTH	Infrastructure Index
+MOTHERSON	Infrastructure Index
+NTPC	Infrastructure Index
+ONGC	Infrastructure Index
+POWERGRID	Infrastructure Index
+RELIANCE	Infrastructure Index
+SHREECEM	Infrastructure Index
+SUZLON	Infrastructure Index
+TATAPOWER	Infrastructure Index
+ULTRACEMCO	Infrastructure Index
+3MINDIA	MNC Index
+ABB	MNC Index
+ABBOTINDIA	MNC Index
+AMBUJACEM	MNC Index
+ASHOKLEY	MNC Index
+BOSCHLTD	MNC Index
+BRITANNIA	MNC Index
+CASTROLIND	MNC Index
+COHANCE	MNC Index
+COLPAL	MNC Index
+CRISIL	MNC Index
+CUMMINSIND	MNC Index
+ENRIN	MNC Index
+ESCORTS	MNC Index
+GLAND	MNC Index
+HINDUNILVR	MNC Index
+HYUNDAI	MNC Index
+LINDEINDIA	MNC Index
+MARUTI	MNC Index
+NAM-INDIA	MNC Index
+NESTLEIND	MNC Index
+OFSS	MNC Index
+PGHH	MNC Index
+POWERINDIA	MNC Index
+SCHAEFFLER	MNC Index
+SIEMENS	MNC Index
+TIMKEN	MNC Index
+UBL	MNC Index
+UNITDSPR	MNC Index
+VEDL	MNC Index
+PVRINOX	Media Index
+SAREGAMA	Media Index
+SUNTV	Media Index
+ZEEL	Media Index
+TIPSMUSIC	Media Index
+PFOCUS	Media Index
+NETWORK18	Media Index
+NAZARA	Media Index
+HATHWAY	Media Index
+DBCORP	Media Index
+ADANIENT	Metal Index
+APLAPOLLO	Metal Index
+HINDALCO	Metal Index
+HINDCOPPER	Metal Index
+HINDZINC	Metal Index
+JINDALSTEL	Metal Index
+JSL	Metal Index
+JSWSTEEL	Metal Index
+LLOYDSME	Metal Index
+NATIONALUM	Metal Index
+NMDC	Metal Index
+SAIL	Metal Index
+TATASTEEL	Metal Index
+VEDL	Metal Index
+WELCORP	Metal Index
+AEGISLOG	Oil & Gas Index
+ATGL	Oil & Gas Index
+BPCL	Oil & Gas Index
+CASTROLIND	Oil & Gas Index
+GAIL	Oil & Gas Index
+GSPL	Oil & Gas Index
+GUJGASLTD	Oil & Gas Index
+HINDPETRO	Oil & Gas Index
+IGL	Oil & Gas Index
+IOC	Oil & Gas Index
+MGL	Oil & Gas Index
+OIL	Oil & Gas Index
+ONGC	Oil & Gas Index
+PETRONET	Oil & Gas Index
+RELIANCE	Oil & Gas Index
+BEL	PSE Index
+BHEL	PSE Index
+BPCL	PSE Index
+COALINDIA	PSE Index
+CONCOR	PSE Index
+GAIL	PSE Index
+HAL	PSE Index
+HINDPETRO	PSE Index
+IOC	PSE Index
+IRCTC	PSE Index
+IRFC	PSE Index
+NHPC	PSE Index
+NMDC	PSE Index
+NTPC	PSE Index
+OIL	PSE Index
+ONGC	PSE Index
+PFC	PSE Index
+POWERGRID	PSE Index
+RECLTD	PSE Index
+RVNL	PSE Index
+BANKBARODA	PSU Bank Index
+BANKINDIA	PSU Bank Index
+CANBK	PSU Bank Index
+CENTRALBK	PSU Bank Index
+INDIANB	PSU Bank Index
+IOB	PSU Bank Index
+MAHABANK	PSU Bank Index
+PNB	PSU Bank Index
+PSB	PSU Bank Index
+SBIN	PSU Bank Index
+UCOBANK	PSU Bank Index
+UNIONBANK	PSU Bank Index
+ABBOTINDIA	Pharma Index
+AJANTPHARM	Pharma Index
+ALKEM	Pharma Index
+AUROPHARMA	Pharma Index
+BIOCON	Pharma Index
+CIPLA	Pharma Index
+DIVISLAB	Pharma Index
+DRREDDY	Pharma Index
+GLAND	Pharma Index
+GLENMARK	Pharma Index
+IPCALAB	Pharma Index
+JBCHEPHARM	Pharma Index
+LAURUSLABS	Pharma Index
+LUPIN	Pharma Index
+MANKIND	Pharma Index
+PPLPHARMA	Pharma Index
+SUNPHARMA	Pharma Index
+TORNTPHARM	Pharma Index
+WOCKPHARMA	Pharma Index
+ZYDUSLIFE	Pharma Index
+AXISBANK	Pvt Bank Index
+BANDHANBNK	Pvt Bank Index
+FEDERALBNK	Pvt Bank Index
+HDFCBANK	Pvt Bank Index
+ICICIBANK	Pvt Bank Index
+IDFCFIRSTB	Pvt Bank Index
+INDUSINDBK	Pvt Bank Index
+KOTAKBANK	Pvt Bank Index
+RBLBANK	Pvt Bank Index
+YESBANK	Pvt Bank Index
+ANANTRAJ	Realty Index
+BRIGADE	Realty Index
+DLF	Realty Index
+GODREJPROP	Realty Index
+LODHA	Realty Index
+OBEROIRLTY	Realty Index
+PHOENIXLTD	Realty Index
+PRESTIGE	Realty Index
+SIGNATURE	Realty Index
+SOBHA	Realty Index
+ADANIPORTS	Service Sector Index
+APOLLOHOSP	Service Sector Index
+AXISBANK	Service Sector Index
+BAJAJFINSV	Service Sector Index
+BAJFINANCE	Service Sector Index
+BHARTIARTL	Service Sector Index
+BSE	Service Sector Index
+DMART	Service Sector Index
+ETERNAL	Service Sector Index
+GAIL	Service Sector Index
+HCLTECH	Service Sector Index
+HDFCBANK	Service Sector Index
+HDFCLIFE	Service Sector Index
+ICICIBANK	Service Sector Index
+INDIGO	Service Sector Index
+INDUSINDBK	Service Sector Index
+INFY	Service Sector Index
+JIOFIN	Service Sector Index
+KOTAKBANK	Service Sector Index
+MAXHEALTH	Service Sector Index
+NAUKRI	Service Sector Index
+NTPC	Service Sector Index
+POWERGRID	Service Sector Index
+SBILIFE	Service Sector Index
+SBIN	Service Sector Index
+SHRIRAMFIN	Service Sector Index
+TATAPOWER	Service Sector Index
+TCS	Service Sector Index
+TECHM	Service Sector Index
+WIPRO	Service Sector Index
