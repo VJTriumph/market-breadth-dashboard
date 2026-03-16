@@ -1,1 +1,1 @@
-ticker,price,ma50,ma200,above_ma50,above_ma200
+ticker,sector,price,ma20,ma50,ma200,rsi14,returns%,above_ma20,above_ma50,above_ma200,rsi>50,postitive weekly return,status
