@@ -5,82 +5,67 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Market Breadth Dashboard</title>
   <style>
-    :root {
-      --bg: #f5f7fb; --card: #ffffff; --header: #1f4e78; --text: #1f2937;
-      --muted: #6b7280; --good: #93c47d; --good2: #b6d7a8; --mid: #f9cb9c;
-      --bad: #ea9999; --border: #d8dee9; --shadow: 0 10px 24px rgba(15,23,42,0.08);
-    }
-    * { box-sizing: border-box; }
-    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: var(--text); }
-    .wrap { max-width: 1400px; margin: 0 auto; padding: 18px; }
-    .topbar { display: flex; justify-content: space-between; align-items: center; gap: 16px; margin-bottom: 16px; flex-wrap: wrap; }
-    .title h1 { margin: 0; font-size: 28px; color: var(--header); }
-    .title p { margin: 4px 0 0; color: var(--muted); font-size: 14px; }
-    .controls { display: flex; gap: 10px; flex-wrap: wrap; align-items: center; }
-    select, input { border: 1px solid var(--border); background: #fff; border-radius: 10px; padding: 10px 12px; font-size: 14px; }
-    .cards { display: grid; grid-template-columns: repeat(5, minmax(180px, 1fr)); gap: 14px; margin-bottom: 18px; }
-    .card { background: var(--card); border-radius: 18px; padding: 16px; box-shadow: var(--shadow); border: 1px solid rgba(31,78,120,0.06); }
-    .card .label { color: var(--muted); font-size: 13px; margin-bottom: 8px; }
-    .card .value { font-size: 28px; font-weight: 700; color: var(--header); }
-    .card .sub { margin-top: 6px; color: var(--muted); font-size: 12px; }
-    .grid-2 { display: grid; grid-template-columns: 2.1fr 1fr; gap: 16px; margin-bottom: 18px; }
-    .panel { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; border: 1px solid rgba(31,78,120,0.06); }
-    .panel-head { background: var(--header); color: white; padding: 14px 16px; font-weight: 700; font-size: 16px; }
-    .table-wrap { overflow: auto; max-height: 560px; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 10px 12px; text-align: center; border-bottom: 1px solid #edf2f7; white-space: nowrap; }
-    th:first-child, td:first-child { text-align: left; position: sticky; left: 0; background: #fff; z-index: 1; }
-    thead th { position: sticky; top: 0; background: #f8fafc; z-index: 2; color: #334155; }
-    tbody tr:hover td { background: #f8fbff; }
-    .metric { border-radius: 8px; font-weight: 700; }
-    .good { background: var(--good); } .good2 { background: var(--good2); }
-    .mid { background: var(--mid); } .bad { background: var(--bad); }
-    .list { padding: 12px; }
-    .list-item { display: flex; justify-content: space-between; align-items: center; padding: 12px 10px; border-bottom: 1px solid #eef2f7; gap: 12px; }
-    .list-item:last-child { border-bottom: none; }
-    .sector-name { font-weight: 700; }
-    .mini { color: var(--muted); font-size: 12px; margin-top: 4px; }
-    .pill { border-radius: 999px; padding: 6px 10px; font-size: 12px; font-weight: 700; display: inline-block; }
-    .pill.strong { background: var(--good); } .pill.moderate { background: var(--mid); }
-    .pill.weak, .pill.noedge { background: var(--bad); }
-    .detail { display: grid; grid-template-columns: 1.2fr 1fr; gap: 16px; margin-bottom: 18px; }
-    .bars { padding: 16px; }
-    .bar-row { margin-bottom: 14px; }
-    .bar-top { display: flex; justify-content: space-between; margin-bottom: 6px; font-size: 13px; }
-    .bar-track { width: 100%; height: 12px; border-radius: 999px; background: #edf2f7; overflow: hidden; }
-    .bar-fill { height: 100%; border-radius: 999px; background: linear-gradient(90deg, #1f4e78, #93c47d); }
-    .status-box { padding: 16px; }
-    .status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
-    .status-card { background: #f8fafc; border: 1px solid var(--border); border-radius: 16px; padding: 14px; }
-    .status-card h3 { margin: 0 0 10px; font-size: 15px; color: var(--header); }
-    .status-card ul { margin: 0; padding-left: 18px; }
-    .status-card li { margin: 6px 0; font-size: 14px; }
-    @media (max-width: 1100px) { .cards, .grid-2, .detail, .status-grid { grid-template-columns: 1fr; } }
+    :root { --bg:#f5f7fb;--card:#fff;--header:#1f4e78;--text:#1f2937;--muted:#6b7280;--good:#93c47d;--good2:#b6d7a8;--mid:#f9cb9c;--bad:#ea9999;--border:#d8dee9;--shadow:0 10px 24px rgba(15,23,42,0.08); }
+    *{box-sizing:border-box;}
+    body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);}
+    .wrap{max-width:1400px;margin:0 auto;padding:18px;}
+    .topbar{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap;}
+    .title h1{margin:0;font-size:28px;color:var(--header);}
+    .title p{margin:4px 0 0;color:var(--muted);font-size:14px;}
+    .controls{display:flex;gap:10px;flex-wrap:wrap;align-items:center;}
+    select,input{border:1px solid var(--border);background:#fff;border-radius:10px;padding:10px 12px;font-size:14px;}
+    .cards{display:grid;grid-template-columns:repeat(5,minmax(180px,1fr));gap:14px;margin-bottom:18px;}
+    .card{background:var(--card);border-radius:18px;padding:16px;box-shadow:var(--shadow);border:1px solid rgba(31,78,120,0.06);}
+    .card .label{color:var(--muted);font-size:13px;margin-bottom:8px;}
+    .card .value{font-size:28px;font-weight:700;color:var(--header);}
+    .card .sub{margin-top:6px;color:var(--muted);font-size:12px;}
+    .grid-2{display:grid;grid-template-columns:2.1fr 1fr;gap:16px;margin-bottom:18px;}
+    .panel{background:var(--card);border-radius:18px;box-shadow:var(--shadow);overflow:hidden;border:1px solid rgba(31,78,120,0.06);}
+    .panel-head{background:var(--header);color:white;padding:14px 16px;font-weight:700;font-size:16px;}
+    .table-wrap{overflow:auto;max-height:560px;}
+    table{width:100%;border-collapse:collapse;font-size:14px;}
+    th,td{padding:10px 12px;text-align:center;border-bottom:1px solid #edf2f7;white-space:nowrap;}
+    th:first-child,td:first-child{text-align:left;position:sticky;left:0;background:#fff;z-index:1;}
+    thead th{position:sticky;top:0;background:#f8fafc;z-index:2;color:#334155;}
+    tbody tr:hover td{background:#f8fbff;}
+    .metric{border-radius:8px;font-weight:700;}
+    .good{background:var(--good);}.good2{background:var(--good2);}.mid{background:var(--mid);}.bad{background:var(--bad);}
+    .list{padding:12px;}
+    .list-item{display:flex;justify-content:space-between;align-items:center;padding:12px 10px;border-bottom:1px solid #eef2f7;gap:12px;}
+    .list-item:last-child{border-bottom:none;}
+    .sector-name{font-weight:700;}
+    .mini{color:var(--muted);font-size:12px;margin-top:4px;}
+    .pill{border-radius:999px;padding:6px 10px;font-size:12px;font-weight:700;display:inline-block;}
+    .pill.strong{background:var(--good);}.pill.moderate{background:var(--mid);}.pill.weak,.pill.noedge{background:var(--bad);}
+    .detail{display:grid;grid-template-columns:1.2fr 1fr;gap:16px;margin-bottom:18px;}
+    .bars{padding:16px;}
+    .bar-row{margin-bottom:14px;}
+    .bar-top{display:flex;justify-content:space-between;margin-bottom:6px;font-size:13px;}
+    .bar-track{width:100%;height:12px;border-radius:999px;background:#edf2f7;overflow:hidden;}
+    .bar-fill{height:100%;border-radius:999px;background:linear-gradient(90deg,#1f4e78,#93c47d);}
+    .status-box{padding:16px;}
+    .status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;}
+    .status-card{background:#f8fafc;border:1px solid var(--border);border-radius:16px;padding:14px;}
+    .status-card h3{margin:0 0 10px;font-size:15px;color:var(--header);}
+    .status-card ul{margin:0;padding-left:18px;}
+    .status-card li{margin:6px 0;font-size:14px;}
+    @media(max-width:1100px){.cards,.grid-2,.detail,.status-grid{grid-template-columns:1fr;}}
   </style>
 </head>
 <body>
 <div class="wrap">
   <div class="topbar">
-    <div class="title">
-      <h1>Market Breadth Dashboard</h1>
-      <p>Sector rotation, breadth, and momentum monitor</p>
-    </div>
+    <div class="title"><h1>Market Breadth Dashboard</h1><p>Sector rotation, breadth, and momentum monitor</p></div>
     <div class="controls">
       <input id="searchBox" type="text" placeholder="Search sector" />
       <select id="sortBy">
-        <option value="rank">Sort: Rank</option>
-        <option value="edge">Sort: Edge Score</option>
-        <option value="rel">Sort: Relative Edge</option>
-        <option value="20">Sort: %Above20MA</option>
-        <option value="50">Sort: %Above50MA</option>
-        <option value="200">Sort: %Above200MA</option>
+        <option value="rank">Sort: Rank</option><option value="edge">Sort: Edge Score</option>
+        <option value="rel">Sort: Relative Edge</option><option value="20">Sort: %Above20MA</option>
+        <option value="50">Sort: %Above50MA</option><option value="200">Sort: %Above200MA</option>
       </select>
       <select id="statusFilter">
-        <option value="all">All Status</option>
-        <option value="Strong">Strong</option>
-        <option value="Moderate">Moderate</option>
-        <option value="Weak">Weak</option>
-        <option value="No Edge">No Edge</option>
+        <option value="all">All Status</option><option value="Strong">Strong</option>
+        <option value="Moderate">Moderate</option><option value="Weak">Weak</option><option value="No Edge">No Edge</option>
       </select>
     </div>
   </div>
@@ -88,67 +73,50 @@
   <div class="grid-2">
     <div class="panel">
       <div class="panel-head">Sector Heatmap</div>
-      <div class="table-wrap">
-        <table>
-          <thead>
-            <tr>
-              <th>Sector</th><th>%Above20MA</th><th>%Above50MA</th><th>%Above200MA</th>
-              <th>%RSI&gt;50</th><th>%PositiveWeeklyReturn</th><th>EdgeScore</th>
-              <th>Rank</th><th>RelativeEdge</th><th>Status</th>
-            </tr>
-          </thead>
-          <tbody id="heatmapBody"></tbody>
-        </table>
-      </div>
+      <div class="table-wrap"><table>
+        <thead><tr><th>Sector</th><th>%Above20MA</th><th>%Above50MA</th><th>%Above200MA</th><th>%RSI&gt;50</th><th>%PositiveWeeklyReturn</th><th>EdgeScore</th><th>Rank</th><th>RelativeEdge</th><th>Status</th></tr></thead>
+        <tbody id="heatmapBody"></tbody>
+      </table></div>
     </div>
-    <div class="panel">
-      <div class="panel-head">Leaders &amp; Laggards</div>
-      <div class="list" id="leadersLaggards"></div>
-    </div>
+    <div class="panel"><div class="panel-head">Leaders &amp; Laggards</div><div class="list" id="leadersLaggards"></div></div>
   </div>
   <div class="detail">
-    <div class="panel">
-      <div class="panel-head">Selected Sector Breakdown</div>
-      <div class="bars" id="sectorBars"></div>
-    </div>
-    <div class="panel">
-      <div class="panel-head">Rotation Monitor</div>
-      <div class="status-box">
-        <div class="status-grid">
-          <div class="status-card"><h3>Improving</h3><ul id="improvingList"></ul></div>
-          <div class="status-card"><h3>Stable Leaders</h3><ul id="leadersList"></ul></div>
-          <div class="status-card"><h3>Deteriorating</h3><ul id="deterioratingList"></ul></div>
-        </div>
-      </div>
+    <div class="panel"><div class="panel-head">Selected Sector Breakdown</div><div class="bars" id="sectorBars"></div></div>
+    <div class="panel"><div class="panel-head">Rotation Monitor</div>
+      <div class="status-box"><div class="status-grid">
+        <div class="status-card"><h3>Improving</h3><ul id="improvingList"></ul></div>
+        <div class="status-card"><h3>Stable Leaders</h3><ul id="leadersList"></ul></div>
+        <div class="status-card"><h3>Deteriorating</h3><ul id="deterioratingList"></ul></div>
+      </div></div>
     </div>
   </div>
 </div>
 <script>
 const dashboardData = [
-  { sector: "Pharma Index", p20: 30.0, p50: 45.0, p200: 55.0, prsi: 40.0, pweek: 15.0, edge: 40.25, rank: 1, relative: 20.97, status: "Moderate" },
-  { sector: "CPSE Index", p20: 27.27, p50: 27.27, p200: 63.64, prsi: 27.27, pweek: 36.36, edge: 39.54, rank: 2, relative: 20.26, status: "Weak" },
-  { sector: "Healthcare Index", p20: 25.0, p50: 40.0, p200: 50.0, prsi: 35.0, pweek: 20.0, edge: 36.75, rank: 3, relative: 17.47, status: "Weak" },
-  { sector: "Metal Index", p20: 6.67, p50: 20.0, p200: 73.33, prsi: 33.33, pweek: 6.67, edge: 34.67, rank: 4, relative: 15.39, status: "Weak" },
-  { sector: "Energy Index", p20: 25.0, p50: 40.0, p200: 38.46, prsi: 22.5, pweek: 40.0, edge: 33.79, rank: 5, relative: 14.51, status: "Weak" },
-  { sector: "Commodities Index", p20: 20.0, p50: 26.67, p200: 50.0, prsi: 26.67, pweek: 30.0, edge: 33.17, rank: 6, relative: 13.89, status: "Weak" },
-  { sector: "PSE Index", p20: 15.0, p50: 20.0, p200: 40.0, prsi: 15.0, pweek: 25.0, edge: 25.0, rank: 7, relative: 5.72, status: "Weak" },
-  { sector: "MNC Index", p20: 10.0, p50: 30.0, p200: 27.59, prsi: 16.67, pweek: 13.33, edge: 21.11, rank: 8, relative: 1.83, status: "No Edge" },
-  { sector: "Infrastructure Index", p20: 6.67, p50: 23.33, p200: 36.67, prsi: 6.67, pweek: 13.33, edge: 20.0, rank: 9, relative: 0.72, status: "No Edge" },
-  { sector: "PSU Bank Index", p20: 0.0, p50: 0.0, p200: 58.33, prsi: 0.0, pweek: 0.0, edge: 17.5, rank: 10, relative: -1.78, status: "No Edge" },
-  { sector: "Service Sector Index", p20: 10.0, p50: 16.67, p200: 26.67, prsi: 10.0, pweek: 10.0, edge: 16.34, rank: 11, relative: -2.94, status: "No Edge" },
-  { sector: "Auo Index", p20: 0.0, p50: 6.67, p200: 50.0, prsi: 0.0, pweek: 0.0, edge: 16.33, rank: 12, relative: -2.95, status: "No Edge" },
-  { sector: "Financial Services Index", p20: 5.0, p50: 10.0, p200: 30.0, prsi: 5.0, pweek: 20.0, edge: 15.75, rank: 13, relative: -3.53, status: "No Edge" },
-  { sector: "Bank Index", p20: 0.0, p50: 0.0, p200: 50.0, prsi: 0.0, pweek: 0.0, edge: 15.0, rank: 14, relative: -4.28, status: "No Edge" },
-  { sector: "Media Index", p20: 10.0, p50: 20.0, p200: 10.0, prsi: 10.0, pweek: 20.0, edge: 13.5, rank: 15, relative: -5.78, status: "No Edge" },
-  { sector: "Consumption Index", p20: 6.67, p50: 10.0, p200: 23.33, prsi: 6.67, pweek: 10.0, edge: 12.83, rank: 16, relative: -6.45, status: "No Edge" },
-  { sector: "Pvt Bank Index", p20: 0.0, p50: 10.0, p200: 30.0, prsi: 0.0, pweek: 0.0, edge: 11.0, rank: 17, relative: -8.28, status: "No Edge" },
-  { sector: "Consumer Durables Index", p20: 6.67, p50: 0.0, p200: 13.33, prsi: 0.0, pweek: 20.0, edge: 8.0, rank: 18, relative: -11.28, status: "No Edge" },
-  { sector: "Oil & Gas Index", p20: 6.67, p50: 0.0, p200: 13.33, prsi: 0.0, pweek: 13.33, edge: 7.0, rank: 19, relative: -12.28, status: "No Edge" },
-  { sector: "FMCG index", p20: 6.67, p50: 6.67, p200: 6.67, prsi: 6.67, pweek: 6.67, edge: 6.67, rank: 20, relative: -12.61, status: "No Edge" },
-  { sector: "IT Index", p20: 0.0, p50: 0.0, p200: 0.0, prsi: 0.0, pweek: 0.0, edge: 0.0, rank: 21, relative: -19.28, status: "No Edge" },
-  { sector: "Realty Index", p20: 0.0, p50: 0.0, p200: 0.0, prsi: 0.0, pweek: 0.0, edge: 0.0, rank: 22, relative: -19.28, status: "No Edge" }
+  {sector:"CPSE Index",p20:27.27,p50:36.36,p200:63.64,prsi:36.36,pweek:45.45,edge:44.09,rank:1,relative:24.73,status:"Moderate"},
+  {sector:"Pharma Index",p20:25.0,p50:45.0,p200:55.0,prsi:35.0,pweek:25.0,edge:39.5,rank:2,relative:20.14,status:"Moderate"},
+  {sector:"Energy Index",p20:25.0,p50:42.5,p200:40.0,prsi:30.0,pweek:35.0,edge:35.25,rank:3,relative:15.89,status:"Moderate"},
+  {sector:"Healthcare Index",p20:20.0,p50:40.0,p200:50.0,prsi:25.0,pweek:25.0,edge:34.5,rank:4,relative:15.14,status:"Weak"},
+  {sector:"Commodities Index",p20:20.0,p50:30.0,p200:50.0,prsi:20.0,pweek:30.0,edge:32.5,rank:5,relative:13.14,status:"Weak"},
+  {sector:"Metal Index",p20:6.67,p50:20.0,p200:73.33,prsi:6.67,pweek:0.0,edge:28.33,rank:6,relative:8.97,status:"Weak"},
+  {sector:"PSE Index",p20:15.0,p50:25.0,p200:40.0,prsi:20.0,pweek:35.0,edge:28.25,rank:7,relative:8.89,status:"Weak"},
+  {sector:"Infrastructure Index",p20:6.67,p50:26.67,p200:36.67,prsi:10.0,pweek:20.0,edge:22.17,rank:8,relative:2.81,status:"Weak"},
+  {sector:"MNC Index",p20:10.0,p50:30.0,p200:26.67,prsi:13.33,pweek:10.0,edge:19.5,rank:9,relative:0.14,status:"Weak"},
+  {sector:"Service Sector Index",p20:10.0,p50:16.67,p200:26.67,prsi:13.33,pweek:16.67,edge:17.84,rank:10,relative:-1.52,status:"Weak"},
+  {sector:"PSU Bank Index",p20:0.0,p50:0.0,p200:58.33,prsi:0.0,pweek:0.0,edge:17.5,rank:11,relative:-1.86,status:"Weak"},
+  {sector:"Financial Services Index",p20:5.0,p50:10.0,p200:30.0,prsi:10.0,pweek:25.0,edge:17.25,rank:12,relative:-2.11,status:"Weak"},
+  {sector:"Bank Index",p20:0.0,p50:0.0,p200:50.0,prsi:0.0,pweek:0.0,edge:15.0,rank:13,relative:-4.36,status:"Weak"},
+  {sector:"Media Index",p20:10.0,p50:20.0,p200:10.0,prsi:10.0,pweek:20.0,edge:13.5,rank:14,relative:-5.86,status:"No Edge"},
+  {sector:"Auto Index",p20:0.0,p50:6.67,p200:40.0,prsi:0.0,pweek:0.0,edge:13.33,rank:15,relative:-6.03,status:"No Edge"},
+  {sector:"Consumption Index",p20:6.67,p50:10.0,p200:20.0,prsi:6.67,pweek:6.67,edge:11.33,rank:16,relative:-8.03,status:"No Edge"},
+  {sector:"Pvt Bank Index",p20:0.0,p50:10.0,p200:30.0,prsi:0.0,pweek:0.0,edge:11.0,rank:17,relative:-8.36,status:"No Edge"},
+  {sector:"Oil & Gas Index",p20:6.67,p50:6.67,p200:20.0,prsi:0.0,pweek:6.67,edge:9.67,rank:18,relative:-9.69,status:"No Edge"},
+  {sector:"Consumer Durables Index",p20:6.67,p50:0.0,p200:13.33,prsi:6.67,pweek:6.67,edge:7.33,rank:19,relative:-12.03,status:"No Edge"},
+  {sector:"FMCG index",p20:6.67,p50:13.33,p200:6.67,prsi:6.67,pweek:0.0,edge:7.0,rank:20,relative:-12.36,status:"No Edge"},
+  {sector:"IT Index",p20:0.0,p50:0.0,p200:0.0,prsi:0.0,pweek:10.0,edge:1.5,rank:21,relative:-17.86,status:"No Edge"},
+  {sector:"Realty Index",p20:0.0,p50:0.0,p200:0.0,prsi:0.0,pweek:0.0,edge:0.0,rank:22,relative:-19.36,status:"No Edge"}
 ];
-let selectedSector = dashboardData[0].sector;
+let selectedSector=dashboardData[0].sector;
 function metricClass(v){if(v>=60)return 'good';if(v>=40)return 'good2';if(v>=20)return 'mid';return 'bad';}
 function statusClass(s){return s.toLowerCase().replace(/s+/g,'');}
 function renderSummary(data){
