@@ -25,12 +25,14 @@ jobs:
         run: pip install -r requirements.txt
 
       - name: Run dashboard builder
+        env:
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
         run: python build_dashboard.py
 
       - name: Commit and push output
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/dashboard.csv output/market_breadth_dashboard_output.html
+          git add output/market_breadth_dashboard_output.html
           git diff --cached --quiet || git commit -m "Auto-update dashboard"
           git push
