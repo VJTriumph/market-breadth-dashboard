@@ -12,9 +12,8 @@ OUTPUT_HTML = BASE_DIR / "output" / "market_breadth_dashboard_output.html"
 def create_sample_dashboard():
     stocks_df = pd.read_csv(STOCKS_FILE)
 
-    # Sample demo output for now
-    # Later this will be replaced with real calculations
-    unique_sectors = stocks_df["Sector"].dropna().unique().tolist()
+    # Use 'sector' column (lowercase) from stocks.csv
+    unique_sectors = stocks_df["sector"].dropna().unique().tolist()
 
     rows = []
     for i, sector in enumerate(unique_sectors, start=1):
