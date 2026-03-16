@@ -1,86 +1,33 @@
-import json
-from pathlib import Path
-import pandas as pd
+name: Update Dashboard
 
-BASE_DIR = Path(__file__).parent
-STOCKS_FILE = BASE_DIR / "data" / "stocks.csv"
-DASHBOARD_FILE = BASE_DIR / "data" / "dashboard.csv"
-HTML_TEMPLATE = BASE_DIR / "market_breadth_dashboard.html"
-OUTPUT_DIR = BASE_DIR / "output"
-OUTPUT_HTML = OUTPUT_DIR / "market_breadth_dashboard_output.html"
+on:
+  schedule:
+    - cron: '0 2 * * *'
+  workflow_dispatch:
 
+jobs:
+  build:
+    runs-on: ubuntu-latest
 
-def create_sample_dashboard():
-    stocks_df = pd.read_csv(STOCKS_FILE)
-    sectors = stocks_df["Sector"].dropna().unique().tolist()
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-    rows = []
-    for i, sector in enumerate(sectors, start=1):
-        edge = round(35 + i * 2.5, 2)
-        rows.append({
-            "Sector": sector,
-            "20MA": round(30 + i * 2, 2),
-            "50MA": round(35 + i * 2, 2),
-            "200MA": round(40 + i * 2, 2),
-            "RSI>50": round(25 + i * 2, 2),
-            "WeeklyReturn": round(20 + i * 2, 2),
-            "EdgeScore": edge,
-            "Rank": i,
-            "RelativeEdge": 0.0,  # filled below
-            "Status": "Strong" if edge >= 55 else "Moderate" if edge >= 40 else "Weak"
-        })
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
 
-    df = pd.DataFrame(rows)
-    avg_edge = df["EdgeScore"].mean()
-    df["RelativeEdge"] = (df["EdgeScore"] - avg_edge).round(2)
+      - name: Install dependencies
+        run: pip install -r requirements.txt
 
-    OUTPUT_DIR.mkdir(parents=True, exist_ok=True)
-    df.to_csv(DASHBOARD_FILE, index=False)
-    return df
+      - name: Run dashboard builder
+        run: python build_dashboard.py
 
-
-def build_html_from_csv():
-    df = pd.read_csv(DASHBOARD_FILE)
-
-    df = df.rename(columns={
-        "Sector": "sector",
-        "20MA": "p20",
-        "50MA": "p50",
-        "200MA": "p200",
-        "RSI>50": "prsi",
-        "WeeklyReturn": "pweek",
-        "EdgeScore": "edge",
-        "Rank": "rank",
-        "RelativeEdge": "relative",
-        "Status": "status"
-    })
-
-    dashboard_json = json.dumps(
-        df.to_dict(orient="records"),
-        ensure_ascii=False,
-        indent=2
-    )
-
-    html = HTML_TEMPLATE.read_text(encoding="utf-8")
-
-    start_marker = "const dashboardData = ["
-    end_marker = "];"
-
-    start_idx = html.find(start_marker)
-    if start_idx == -1:
-        raise ValueError("dashboardData block not found in HTML")
-
-    end_idx = html.find(end_marker, start_idx)
-    if end_idx == -1:
-        raise ValueError("End of dashboardData block not found in HTML")
-
-    replacement = f"const dashboardData = {dashboard_json}"
-    new_html = html[:start_idx] + replacement + html[end_idx + len(end_marker):]
-
-    OUTPUT_HTML.write_text(new_html, encoding="utf-8")
-    print(f"Dashboard created: {OUTPUT_HTML}")
-
-
-if __name__ == "__main__":
-    create_sample_dashboard()
-    build_html_from_csv()
+      - name: Commit and push output
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add output/ data/
+          git diff --cached --quiet || git commit -m "Auto-update dashboard"
+          git push
