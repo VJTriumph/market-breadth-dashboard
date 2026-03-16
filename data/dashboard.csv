@@ -1,1 +1,23 @@
-ticker,sector,price,ma20,ma50,ma200,rsi14,returns%,above_ma20,above_ma50,above_ma200,rsi>50,postitive weekly return,status
+Sector,20MA,50MA,200MA,RSI>50,WeeklyReturn,EdgeScore,Rank,RelativeEdge,Status
+CPSE Index,41,46,51,36,31,42,1,-8,Moderate
+Auo Index,42,47,52,37,32,44,2,-6,Moderate
+Bank Index,43,48,53,38,33,46,3,-4,Moderate
+Commodities Index,44,49,54,39,34,48,4,-2,Moderate
+Consumer Durables Index,45,50,55,40,35,50,5,0,Moderate
+Consumption Index,46,51,56,41,36,52,6,2,Moderate
+Energy Index,47,52,57,42,37,54,7,4,Moderate
+FMCG index,48,53,58,43,38,56,8,6,Strong
+Financial Services Index,49,54,59,44,39,58,9,8,Strong
+Healthcare Index,50,55,60,45,40,60,10,10,Strong
+IT Index,51,56,61,46,41,62,11,12,Strong
+Infrastructure Index,52,57,62,47,42,64,12,14,Strong
+MNC Index,53,58,63,48,43,66,13,16,Strong
+Media Index,54,59,64,49,44,68,14,18,Strong
+Metal Index,55,60,65,50,45,70,15,20,Strong
+Oil & Gas Index,56,61,66,51,46,72,16,22,Strong
+PSE Index,57,62,67,52,47,74,17,24,Strong
+PSU Bank Index,58,63,68,53,48,76,18,26,Strong
+Pharma Index,59,64,69,54,49,78,19,28,Strong
+Pvt Bank Index,60,65,70,55,50,80,20,30,Strong
+Realty Index,61,66,71,56,51,82,21,32,Strong
+Service Sector Index,62,67,72,57,52,84,22,34,Strong
