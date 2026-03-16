@@ -26,9 +26,9 @@
     .grid-2 { display: grid; grid-template-columns: 2.1fr 1fr; gap: 16px; margin-bottom: 18px; }
     .panel { background: var(--card); border-radius: 18px; box-shadow: var(--shadow); overflow: hidden; border: 1px solid rgba(31,78,120,0.06); }
     .panel-head { background: var(--header); color: white; padding: 14px 16px; font-weight: 700; font-size: 16px; }
-    .table-wrap { overflow: auto; max-height: 560px; }
-    table { width: 100%; border-collapse: collapse; font-size: 14px; }
-    th, td { padding: 10px 12px; text-align: center; border-bottom: 1px solid #edf2f7; white-space: nowrap; }
+    .table-wrap { overflow: auto; max-height: none; }
+    table { width: 100%; border-collapse: collapse; font-size: 11px; }
+    th, td { padding: 6px 8px; text-align: center; border-bottom: 1px solid #edf2f7; white-space: nowrap; }
     th:first-child, td:first-child { text-align: left; position: sticky; left: 0; background: #fff; z-index: 1; }
     thead th { position: sticky; top: 0; background: #f8fafc; z-index: 2; color: #334155; }
     tbody tr:hover td { background: #f8fbff; }
@@ -63,7 +63,7 @@
   <div class="topbar">
     <div class="title">
       <h1>Market Breadth Dashboard</h1>
-      <p>Sector rotation, breadth, and momentum monitor</p>
+      <p>Sector rotation, breadth, and momentum monitor</p>            <p style="font-size:11px;color:#6b7280;margin:2px 0 0 0;">Last Updated: LAST_UPDATED_PLACEHOLDER</p>
     </div>
     <div class="controls">
       <input id="searchBox" type="text" placeholder="Search sector" />
@@ -71,9 +71,9 @@
         <option value="rank">Sort: Rank</option>
         <option value="edge">Sort: Edge Score</option>
         <option value="rel">Sort: Relative Edge</option>
-        <option value="20">Sort: %Above20MA</option>
-        <option value="50">Sort: %Above50MA</option>
-        <option value="200">Sort: %Above200MA</option>
+        <option value="20">Sort: 20MA%</option>
+        <option value="50">Sort: 50MA%</option>
+        <option value="200">Sort: 200MA%</option>
       </select>
       <select id="statusFilter">
         <option value="all">All Status</option>
@@ -92,8 +92,8 @@
         <table>
           <thead>
             <tr>
-              <th>Sector</th><th>%Above20MA</th><th>%Above50MA</th><th>%Above200MA</th>
-              <th>%RSI&gt;50</th><th>%PositiveWeeklyReturn</th><th>EdgeScore</th>
+              <th>Sector</th><th>20MA%</th><th>50MA%</th><th>200MA%</th>
+              <th>RSI>50%</th><th>Wk Ret%</th><th>Edge</th>
               <th>Rank</th><th>RelativeEdge</th><th>Status</th>
             </tr>
           </thead>
@@ -208,7 +208,7 @@ function renderLeadersLaggards(){
 function renderSectorDetail(){
   const row=dashboardData.find(x=>x.sector===selectedSector)||dashboardData[0];
   const bars=document.getElementById('sectorBars');
-  const metrics=[['%Above20MA',row.p20],['%Above50MA',row.p50],['%Above200MA',row.p200],['%RSI>50',row.prsi],['%PositiveWeeklyReturn',row.pweek],['EdgeScore',row.edge]];
+  const metrics=[['20MA%',row.p20],['50MA%',row.p50],['200MA%',row.p200],['RSI>50%',row.prsi],['Wk Ret%',row.pweek],['EdgeScore',row.edge]];
   let html='<div style="font-weight:700;color:#1f4e78;margin-bottom:14px;font-size:18px;">'+row.sector+'</div>';
   metrics.forEach(function(m){html+='<div class="bar-row"><div class="bar-top"><span>'+m[0]+'</span><span>'+m[1].toFixed(2)+'</span></div><div class="bar-track"><div class="bar-fill" style="width:'+Math.max(0,Math.min(m[1],100))+'%"></div></div></div>';});
   bars.innerHTML=html;
