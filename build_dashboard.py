@@ -66,17 +66,13 @@ def stock_signals(s):
         sigs["rsi_above_50"] = 1 if (not np.isnan(rsi) and rsi > 50) else 0
     else:
         sigs["rsi_above_50"] = 0
-    last_week_day    = last_date - timedelta(days=last_date.weekday() + 1)
-    prev_week_closes = s[s.index.date <= last_week_day.date()]
-    if len(prev_week_closes) >= 1:
-        prev_close = prev_week_closes.iloc[-1]
+    # Weekly return: compare vs close 5 trading days ago (one week back)
+    if len(s) >= 6:
+        prev_close = s.iloc[-6]
         weekly_ret = (last / prev_close - 1) * 100 if prev_close != 0 else 0
         sigs["weekly_return_positive"] = 1 if weekly_ret > 0 else 0
     else:
-        if len(s) >= 6:
-            sigs["weekly_return_positive"] = 1 if last > s.iloc[-6] else 0
-        else:
-            sigs["weekly_return_positive"] = 0
+        sigs["weekly_return_positive"] = 0
     sigs["last_date"] = str(last_date.date())
     return sigs
 
