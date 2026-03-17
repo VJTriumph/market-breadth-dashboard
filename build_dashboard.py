@@ -31,7 +31,7 @@ def compute_rsi(series, period=14):
 def fetch_prices(tickers):
     import numpy as np
     ns  = [t + ".NS" for t in tickers]
-    end = datetime.today()
+    end = datetime.today() + timedelta(days=1)
     start = end - timedelta(days=HISTORY_DAYS)
     print(f"Fetching {len(ns)} tickers ...")
     raw = yf.download(
