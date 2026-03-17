@@ -220,7 +220,7 @@ function renderSectorDetail(){
   var row=dashboardData.filter(function(x){return x.sector===selectedSector;})[0]||dashboardData[0];
   var bars=document.getElementById('sectorBars');
   if(!row){bars.innerHTML='<p style="color:#6b7280;padding:16px">No data</p>';return;}
-  var m=[['%Above20MA',row.p20],['%Above50MA',row.p50],['%Above200MA',row.p200],['%RSI>50',row.prsi],['%Positive Weekly Return',row.pweek],['EdgeScore',row.edge]];
+  var m=[['20MA',row.p20],['50MA',row.p50],['200MA',row.p200],['RSI>50',row.prsi],['X%',row.pweek],['EdgeScore',row.edge]];
   var warn=(row.data_warning==='WARNING')?'<div style="background:#fef3c7;border-radius:8px;padding:8px 12px;margin-bottom:12px;font-size:13px;color:#92400e;">Data warning: only '+row.stocks_ok+'/'+row.stocks_total+' stocks loaded</div>':'';
   bars.innerHTML='<div style="font-weight:700;color:#1f4e78;margin-bottom:14px;font-size:18px;">'+row.sector+'</div>'+warn+
     m.map(function(x){return'<div class="bar-row"><div class="bar-top"><span>'+x[0]+'</span><span>'+x[1].toFixed(2)+'</span></div><div class="bar-track"><div class="bar-fill" style="width:'+Math.max(0,Math.min(x[1],100))+'%"></div></div></div>';}).join('');
