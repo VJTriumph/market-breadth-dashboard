@@ -21,7 +21,7 @@ body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: var(--b
 select, input { border: 1px solid var(--border); background: #fff; border-radius: 10px; padding: 10px 12px; font-size: 14px; }
 .quality-bar { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; background: #fff; border-radius: 14px; padding: 12px 18px; box-shadow: var(--shadow); margin-bottom: 16px; border: 1px solid rgba(31,78,120,0.08); }
 .quality-bar .qitem { display: flex; align-items: center; gap: 7px; font-size: 13px; }
-.quality-bar .qitem .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }
+.quality-bar .qitem .dot { width: 10px; height: 10px; border-radius: 50%; flex-shrink: 0; }h
 .dot-green { background: #34a853; } .dot-orange { background: #f59e0b; } .dot-red { background: #ef4444; }
 .quality-bar .qlabel { color: var(--muted); } .quality-bar .qval { font-weight: 700; } .quality-bar .qsep { color: #d1d5db; }
 .quality-bar .qtime { margin-left: auto; color: var(--muted); font-size: 13px; }
@@ -118,7 +118,7 @@ tbody tr:hover td { background: #f8fbff; }
     <div class="panel">
       <div class="panel-head">Leaders &amp; Laggards</div>
       <div class="list" id="leadersLaggards"></div>
-    </div>
+    </div>h
   </div>
   <div class="detail">
     <div class="panel">
@@ -142,7 +142,7 @@ const dashboardData = [];
 const qualityData = {};
 let selectedSector = dashboardData[0]&&dashboardData[0].sector || '';
 function metricClass(v){ if(v>=60)return'good'; if(v>=40)return'good2'; if(v>=20)return'mid'; return'bad'; }
-function statusClass(s){ return s.toLowerCase().replace(/s+/g,''); }
+function statusClass(s){ return s.toLowerCase().replace(/\s+/g,''); }
 function renderQualityBar(){
   var q=qualityData||{};
   var ok=q.ok_stocks||0, mi=q.missing_count||0, nd=q.nodata_count||0, st=q.stale_count||0;
