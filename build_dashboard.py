@@ -19,12 +19,12 @@ HISTORY_DAYS = 450  # enough for 200-day SMA + RSI warmup
 # ── helpers ──────────────────────────────────────────────────────────────────
 
 def compute_rsi(series, period=14):
-    """Wilder's RMA RSI - matches TradingView / NSE app exactly."""
+    """Simple SMA RSI (no smoothing) - plain avg gain/loss over last N bars."""
     delta = series.diff()
     gain  = delta.clip(lower=0)
     loss  = (-delta).clip(lower=0)
-    avg_gain = gain.ewm(alpha=1/period, min_periods=period, adjust=False).mean()
-    avg_loss = loss.ewm(alpha=1/period, min_periods=period, adjust=False).mean()
+    avg_gain = gain.rolling(period).mean()
+    avg_loss = loss.rolling(period).mean()
     rs = avg_gain / avg_loss.replace(0, float('nan'))
     return 100 - (100 / (1 + rs))
 
