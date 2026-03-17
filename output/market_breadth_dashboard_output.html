@@ -83,9 +83,9 @@ tbody tr:hover td { background: #f8fbff; }
         <option value="rank">Sort: Rank</option>
         <option value="edge">Sort: Edge Score</option>
         <option value="rel">Sort: Relative Edge</option>
-        <option value="20">Sort: %Above20MA</option>
-        <option value="50">Sort: %Above50MA</option>
-        <option value="200">Sort: %Above200MA</option>
+        <option value="20">Sort: 20MA</option>
+        <option value="50">Sort: 50MA</option>
+        <option value="200">Sort: 200MA</option>
       </select>
       <select id="statusFilter">
         <option value="all">All Status</option>
@@ -106,8 +106,8 @@ tbody tr:hover td { background: #f8fbff; }
         <table>
           <thead>
             <tr>
-              <th>Sector</th><th>%Above20MA</th><th>%Above50MA</th><th>%Above200MA</th>
-              <th>%RSI&gt;50</th><th>%Positive Weekly Return</th>
+              <th>Sector</th><th>20MA</th><th>50MA</th><th>200MA</th>
+              <th>RSI&gt;50</th><th>X%</th>
               <th>EdgeScore</th><th>Rank</th><th>RelativeEdge</th><th>Status</th>
             </tr>
           </thead>
@@ -471,7 +471,7 @@ const dashboardData = [
   }
 ]
 const qualityData = {
-  "run_time": "2026-03-17 05:05 IST",
+  "run_time": "2026-03-17 05:18 IST",
   "most_recent_bar": "2026-03-16",
   "total_stocks": 230,
   "ok_stocks": 422,
