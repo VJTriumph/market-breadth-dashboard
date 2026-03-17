@@ -176,7 +176,7 @@ function renderSummary(data){
     '<div class="card"><div class="label">Weakest Sector</div><div class="value" style="font-size:18px">'+(w?w.sector:'--')+'</div><div class="sub">Edge '+(w?w.edge.toFixed(2):'--')+'</div></div>'+
     '<div class="card"><div class="label">Average Edge Score</div><div class="value">'+avg.toFixed(2)+'</div><div class="sub">All sectors average</div></div>'+
     '<div class="card"><div class="label">Sectors Edge &ge;50</div><div class="value">'+a50+'</div><div class="sub">Strong breadth zones</div></div>'+
-    '<div class="card"><div class="label">Weekly Breadth Leaders</div><div class="value">'+pw+'</div><div class="sub">%PosWeekly &gt; 50</div></div>';
+    '<div class="card"><div class="label">Weekly Breadth Leaders</div><div class="value">'+pw+'</div><div class="sub">Weekly &gt; 50</div></div>';
 }
 function getFilteredData(){
   var q=document.getElementById('searchBox').value.trim().toLowerCase();
