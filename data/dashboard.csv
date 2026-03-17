@@ -1,23 +1,23 @@
 Sector,20MA,50MA,200MA,RSI>50,WeeklyReturn,EdgeScore,Rank,RelativeEdge,Status
-CPSE Index,27.27,36.36,63.64,36.36,45.45,44.09,1,24.73,Moderate
-Pharma Index,25.0,45.0,55.0,35.0,25.0,39.5,2,20.14,Moderate
-Energy Index,25.0,42.5,40.0,30.0,35.0,35.25,3,15.89,Moderate
-Healthcare Index,20.0,40.0,50.0,25.0,25.0,34.5,4,15.14,Weak
-Commodities Index,20.0,30.0,50.0,20.0,30.0,32.5,5,13.14,Weak
-Metal Index,6.67,20.0,73.33,6.67,0.0,28.33,6,8.97,Weak
-PSE Index,15.0,25.0,40.0,20.0,35.0,28.25,7,8.89,Weak
-Infrastructure Index,6.67,26.67,36.67,10.0,20.0,22.17,8,2.81,Weak
-MNC Index,10.0,30.0,26.67,13.33,10.0,19.5,9,0.14,Weak
-Service Sector Index,10.0,16.67,26.67,13.33,16.67,17.84,10,-1.52,Weak
-PSU Bank Index,0.0,0.0,58.33,0.0,0.0,17.5,11,-1.86,Weak
-Financial Services Index,5.0,10.0,30.0,10.0,25.0,17.25,12,-2.11,Weak
-Bank Index,0.0,0.0,50.0,0.0,0.0,15.0,13,-4.36,Weak
-Media Index,10.0,20.0,10.0,10.0,20.0,13.5,14,-5.86,No Edge
-Auto Index,0.0,6.67,40.0,0.0,0.0,13.33,15,-6.03,No Edge
-Consumption Index,6.67,10.0,20.0,6.67,6.67,11.33,16,-8.03,No Edge
-Pvt Bank Index,0.0,10.0,30.0,0.0,0.0,11.0,17,-8.36,No Edge
-Oil & Gas Index,6.67,6.67,20.0,0.0,6.67,9.67,18,-9.69,No Edge
-Consumer Durables Index,6.67,0.0,13.33,6.67,6.67,7.33,19,-12.03,No Edge
-FMCG index,6.67,13.33,6.67,6.67,0.0,7.0,20,-12.36,No Edge
-IT Index,0.0,0.0,0.0,0.0,10.0,1.5,21,-17.86,No Edge
-Realty Index,0.0,0.0,0.0,0.0,0.0,0.0,22,-19.36,No Edge
+CPSE Index,45.45,63.64,63.64,36.36,45.45,51.82,1,30.86,Moderate
+Pharma Index,45.0,55.0,60.0,45.0,35.0,48.75,2,27.79,Moderate
+Energy Index,30.0,50.0,50.0,35.0,40.0,42.0,3,21.04,Moderate
+Healthcare Index,35.0,50.0,55.0,35.0,30.0,42.0,4,21.04,Moderate
+Commodities Index,20.0,36.67,53.33,20.0,26.67,33.0,5,12.04,Weak
+PSE Index,20.0,35.0,50.0,20.0,20.0,30.5,6,9.54,Weak
+Metal Index,6.67,26.67,66.67,6.67,0.0,24.34,7,3.38,Weak
+Infrastructure Index,10.0,26.67,40.0,16.67,16.67,23.5,8,2.54,Weak
+MNC Index,16.67,30.0,30.0,20.0,13.33,22.67,9,1.71,Weak
+Service Sector Index,13.33,20.0,23.33,13.33,23.33,19.16,10,-1.8,No Edge
+PSU Bank Index,0.0,0.0,58.33,0.0,0.0,14.58,11,-6.38,No Edge
+Oil & Gas Index,6.67,20.0,26.67,6.67,6.67,14.34,12,-6.62,No Edge
+Financial Services Index,5.0,10.0,25.0,10.0,15.0,14.0,13,-6.96,No Edge
+Consumption Index,6.67,13.33,20.0,6.67,10.0,12.0,14,-8.96,No Edge
+Media Index,10.0,20.0,10.0,10.0,10.0,12.0,15,-8.96,No Edge
+Pvt Bank Index,0.0,10.0,30.0,10.0,0.0,11.5,16,-9.46,No Edge
+Auto Index,0.0,6.67,40.0,0.0,0.0,11.33,17,-9.63,No Edge
+Bank Index,0.0,0.0,42.86,0.0,0.0,10.71,18,-10.25,No Edge
+Consumer Durables Index,6.67,0.0,20.0,6.67,13.33,10.0,19,-10.96,No Edge
+FMCG index,13.33,6.67,6.67,13.33,6.67,9.0,20,-11.96,No Edge
+IT Index,0.0,0.0,0.0,0.0,20.0,4.0,21,-16.96,No Edge
+Realty Index,0.0,0.0,0.0,0.0,0.0,0.0,22,-20.96,No Edge
