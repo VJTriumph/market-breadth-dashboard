@@ -574,7 +574,7 @@ const qualityData = {
 }
 let selectedSector = dashboardData[0]&&dashboardData[0].sector || '';
 function metricClass(v){ if(v>=60)return'good'; if(v>=40)return'good2'; if(v>=20)return'mid'; return'bad'; }
-function statusClass(s){ return s.toLowerCase().replace(/s+/g,''); }
+function statusClass(s){ return s.toLowerCase().replace(/\s+/g,''); }
 function renderQualityBar(){
   var q=qualityData||{};
   var ok=q.ok_stocks||0, mi=q.missing_count||0, nd=q.nodata_count||0, st=q.stale_count||0;
