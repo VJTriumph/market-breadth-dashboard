@@ -136,7 +136,7 @@ def build_dashboard():
     for _, row in stocks_df.iterrows():
         tk, sec = row["stock"], row["sector"]
         if tk not in prices.columns:
-            print(f"  MISSING : {tk}")h
+            print(f"  MISSING : {tk}")
             missing_tickers.append({"stock": tk, "sector": sec, "reason": "Not in yfinance response"})
             continue
 
