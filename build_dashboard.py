@@ -136,7 +136,7 @@ def build_dashboard():
     for _, row in stocks_df.iterrows():
         tk, sec = row["stock"], row["sector"]
         if tk not in prices.columns:
-            print(f"  MISSING : {tk}")
+            print(f"  MISSING : {tk}")h
             missing_tickers.append({"stock": tk, "sector": sec, "reason": "Not in yfinance response"})
             continue
 
@@ -187,11 +187,11 @@ def build_dashboard():
         sector_counts[sec] = {"ok": n, "total": total_in_sector}
         sector_rows.append({
             "Sector":       sec,
-            "20MA":         round(grp["above_20ma"].sum()              / n * 100, 2),
-            "50MA":         round(grp["above_50ma"].sum()              / n * 100, 2),
-            "200MA":        round(grp["above_200ma"].sum()             / n * 100, 2),
-            "RSI>50":       round(grp["rsi_above_50"].sum()            / n * 100, 2),
-            "WeeklyReturn": round(grp["weekly_return_positive"].sum()  / n * 100, 2),
+            "20MA":         round(grp["above_20ma"].sum()              / total_in_sector * 100, 2),
+            "50MA":         round(grp["above_50ma"].sum()              / total_in_sector * 100, 2),
+            "200MA":        round(grp["above_200ma"].sum()             / total_in_sector * 100, 2),
+            "RSI>50":       round(grp["rsi_above_50"].sum()            / total_in_sector * 100, 2),
+            "WeeklyReturn": round(grp["weekly_return_positive"].sum()  / total_in_sector * 100, 2),
             "StocksOK":     n,
             "StocksTotal":  total_in_sector,
         })
