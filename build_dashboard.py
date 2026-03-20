@@ -82,7 +82,7 @@ def stock_signals(s):
         sigs["prev_close_5d"]  = round(float(prev_close), 4)
         sigs["last_close"]     = round(float(last), 4)
         sigs["weekly_return_pct"] = round(float(weekly_ret), 4)
-        sigs["weekly_return_positive"] = 1 if weekly_ret > 0 else 0
+        sigs["weekly_return_positive"] = 1 if weekly_ret > 1 else 0
     else:
         sigs["prev_close_5d"]  = None
         sigs["last_close"]     = round(float(last), 4)
