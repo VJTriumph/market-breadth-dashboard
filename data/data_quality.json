@@ -1,13 +1,24 @@
 {
-  "run_time": "2026-03-24 13:54 IST",
+  "run_time": "2026-03-24 14:20 IST",
   "most_recent_bar": "2026-03-24",
   "total_stocks": 230,
-  "ok_stocks": 422,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "TORNTPOWER",
+      "sector": "Commodities Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "TORNTPOWER",
+      "sector": "Energy Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -23,7 +34,7 @@
       "total": 11
     },
     "Commodities Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Consumer Durables Index": {
@@ -35,7 +46,7 @@
       "total": 30
     },
     "Energy Index": {
-      "ok": 40,
+      "ok": 39,
       "total": 40
     },
     "FMCG index": {
