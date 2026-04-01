@@ -1,13 +1,29 @@
 {
-  "run_time": "2026-04-01 14:10 IST",
+  "run_time": "2026-04-01 14:42 IST",
   "most_recent_bar": "2026-04-01",
   "total_stocks": 230,
-  "ok_stocks": 422,
+  "ok_stocks": 419,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 3,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "NESTLEIND",
+      "sector": "Consumption Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "NESTLEIND",
+      "sector": "FMCG index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "NESTLEIND",
+      "sector": "MNC Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -31,7 +47,7 @@
       "total": 15
     },
     "Consumption Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Energy Index": {
@@ -39,7 +55,7 @@
       "total": 40
     },
     "FMCG index": {
-      "ok": 15,
+      "ok": 14,
       "total": 15
     },
     "Financial Services Index": {
@@ -59,7 +75,7 @@
       "total": 30
     },
     "MNC Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Media Index": {
