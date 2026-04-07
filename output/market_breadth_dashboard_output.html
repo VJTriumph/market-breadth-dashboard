@@ -386,13 +386,13 @@ const dashboardData = [
     "p200": 6.67,
     "prsi": 33.33,
     "pweek": 46.67,
-    "stocks_ok": 15,
+    "stocks_ok": 14,
     "stocks_total": 15,
     "edge": 26.67,
     "rank": 17,
     "relative": -8.99,
     "status": "Weak",
-    "data_warning": "OK"
+    "data_warning": "WARNING"
   },
   {
     "sector": "Pharma Index",
@@ -471,15 +471,21 @@ const dashboardData = [
   }
 ]
 const qualityData = {
-  "run_time": "2026-04-07 14:05 IST",
+  "run_time": "2026-04-07 14:46 IST",
   "most_recent_bar": "2026-04-07",
   "total_stocks": 230,
-  "ok_stocks": 422,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "BLUESTARCO",
+      "sector": "Consumer Durables Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -499,7 +505,7 @@ const qualityData = {
       "total": 30
     },
     "Consumer Durables Index": {
-      "ok": 15,
+      "ok": 14,
       "total": 15
     },
     "Consumption Index": {
