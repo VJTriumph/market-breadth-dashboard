@@ -1,16 +1,21 @@
 {
-  "run_time": "2026-04-07 14:46 IST",
+  "run_time": "2026-04-07 16:20 IST",
   "most_recent_bar": "2026-04-07",
   "total_stocks": 230,
-  "ok_stocks": 421,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
   "nodata": [
     {
-      "stock": "BLUESTARCO",
-      "sector": "Consumer Durables Index",
+      "stock": "BEL",
+      "sector": "CPSE Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "BEL",
+      "sector": "PSE Index",
       "reason": "Insufficient bars (<10)"
     }
   ],
@@ -25,7 +30,7 @@
       "total": 14
     },
     "CPSE Index": {
-      "ok": 11,
+      "ok": 10,
       "total": 11
     },
     "Commodities Index": {
@@ -33,7 +38,7 @@
       "total": 30
     },
     "Consumer Durables Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Consumption Index": {
@@ -81,7 +86,7 @@
       "total": 15
     },
     "PSE Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "PSU Bank Index": {
