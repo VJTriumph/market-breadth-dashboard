@@ -1,24 +1,13 @@
 {
-  "run_time": "2026-04-07 16:20 IST",
+  "run_time": "2026-04-07 16:25 IST",
   "most_recent_bar": "2026-04-07",
   "total_stocks": 230,
-  "ok_stocks": 420,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 2,
+  "nodata_count": 0,
   "stale_count": 0,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "BEL",
-      "sector": "CPSE Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "BEL",
-      "sector": "PSE Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -30,7 +19,7 @@
       "total": 14
     },
     "CPSE Index": {
-      "ok": 10,
+      "ok": 11,
       "total": 11
     },
     "Commodities Index": {
@@ -86,7 +75,7 @@
       "total": 15
     },
     "PSE Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "PSU Bank Index": {
