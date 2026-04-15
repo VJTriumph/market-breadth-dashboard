@@ -1,24 +1,13 @@
 {
-  "run_time": "2026-04-15 14:09 IST",
+  "run_time": "2026-04-15 14:47 IST",
   "most_recent_bar": "2026-04-15",
   "total_stocks": 230,
-  "ok_stocks": 420,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 2,
+  "nodata_count": 0,
   "stale_count": 0,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "HAVELLS",
-      "sector": "Consumer Durables Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "HAVELLS",
-      "sector": "Consumption Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -38,11 +27,11 @@
       "total": 30
     },
     "Consumer Durables Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Consumption Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "Energy Index": {
