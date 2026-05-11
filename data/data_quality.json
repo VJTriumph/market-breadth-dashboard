@@ -1,13 +1,24 @@
 {
-  "run_time": "2026-05-08 14:53 IST",
-  "most_recent_bar": "2026-05-08",
+  "run_time": "2026-05-11 15:42 IST",
+  "most_recent_bar": "2026-05-11",
   "total_stocks": 230,
-  "ok_stocks": 422,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "SUNPHARMA",
+      "sector": "Healthcare Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "SUNPHARMA",
+      "sector": "Pharma Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -47,7 +58,7 @@
       "total": 20
     },
     "Healthcare Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "IT Index": {
@@ -83,7 +94,7 @@
       "total": 12
     },
     "Pharma Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "Pvt Bank Index": {
