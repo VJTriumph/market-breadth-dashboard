@@ -1,13 +1,19 @@
 {
-  "run_time": "2026-05-12 15:18 IST",
+  "run_time": "2026-05-12 15:40 IST",
   "most_recent_bar": "2026-05-12",
   "total_stocks": 230,
-  "ok_stocks": 422,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "CESC",
+      "sector": "Energy Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -35,7 +41,7 @@
       "total": 30
     },
     "Energy Index": {
-      "ok": 40,
+      "ok": 39,
       "total": 40
     },
     "FMCG index": {
