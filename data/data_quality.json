@@ -1,19 +1,13 @@
 {
-  "run_time": "2026-05-11 15:56 IST",
-  "most_recent_bar": "2026-05-11",
+  "run_time": "2026-05-12 15:18 IST",
+  "most_recent_bar": "2026-05-12",
   "total_stocks": 230,
-  "ok_stocks": 421,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 0,
   "stale_count": 0,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "KAJARIACER",
-      "sector": "Consumer Durables Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -33,7 +27,7 @@
       "total": 30
     },
     "Consumer Durables Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Consumption Index": {
