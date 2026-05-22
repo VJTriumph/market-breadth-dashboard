@@ -1,11 +1,11 @@
 {
-  "run_time": "2026-05-21 16:17 IST",
-  "most_recent_bar": "2026-05-21",
-  "total_stocks": 230,
+  "run_time": "2026-05-22 05:34 IST",
+  "most_recent_bar": "2026-05-22",
+  "total_stocks": 232,
   "ok_stocks": 422,
   "missing_count": 0,
   "nodata_count": 0,
-  "stale_count": 2,
+  "stale_count": 1,
   "missing": [],
   "nodata": [],
   "stale": [
@@ -13,13 +13,7 @@
       "stock": "GSPL",
       "sector": "Energy Index",
       "last_date": "2026-05-11",
-      "days_behind": 10
-    },
-    {
-      "stock": "GSPL",
-      "sector": "Oil & Gas Index",
-      "last_date": "2026-05-11",
-      "days_behind": 10
+      "days_behind": 11
     }
   ],
   "sector_counts": {
