@@ -1,13 +1,24 @@
 {
-  "run_time": "2026-05-27 16:39 IST",
+  "run_time": "2026-05-28 16:36 IST",
   "most_recent_bar": "2026-05-27",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "TCS",
+      "sector": "IT Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "TCS",
+      "sector": "Service Sector Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -51,7 +62,7 @@
       "total": 20
     },
     "IT Index": {
-      "ok": 10,
+      "ok": 9,
       "total": 10
     },
     "Infrastructure Index": {
@@ -95,7 +106,7 @@
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     }
   }

@@ -326,13 +326,13 @@ const dashboardData = [
     "p200": 36.67,
     "prsi": 36.67,
     "pweek": 60.0,
-    "stocks_ok": 30,
+    "stocks_ok": 29,
     "stocks_total": 30,
     "edge": 51.17,
     "rank": 13,
     "relative": -4.59,
     "status": "Moderate",
-    "data_warning": "OK"
+    "data_warning": "WARNING"
   },
   {
     "sector": "Consumption Index",
@@ -416,13 +416,13 @@ const dashboardData = [
     "p200": 10.0,
     "prsi": 60.0,
     "pweek": 30.0,
-    "stocks_ok": 10,
+    "stocks_ok": 9,
     "stocks_total": 10,
     "edge": 41.5,
     "rank": 19,
     "relative": -14.26,
     "status": "Moderate",
-    "data_warning": "OK"
+    "data_warning": "WARNING"
   },
   {
     "sector": "Financial Services Index",
@@ -471,15 +471,26 @@ const dashboardData = [
   }
 ]
 const qualityData = {
-  "run_time": "2026-05-27 16:39 IST",
+  "run_time": "2026-05-28 16:36 IST",
   "most_recent_bar": "2026-05-27",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "TCS",
+      "sector": "IT Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "TCS",
+      "sector": "Service Sector Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -523,7 +534,7 @@ const qualityData = {
       "total": 20
     },
     "IT Index": {
-      "ok": 10,
+      "ok": 9,
       "total": 10
     },
     "Infrastructure Index": {
@@ -567,7 +578,7 @@ const qualityData = {
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     }
   }
