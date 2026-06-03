@@ -1,13 +1,24 @@
 {
-  "run_time": "2026-06-02 17:26 IST",
-  "most_recent_bar": "2026-06-02",
+  "run_time": "2026-06-03 17:23 IST",
+  "most_recent_bar": "2026-06-03",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "JINDALSTEL",
+      "sector": "Commodities Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "JINDALSTEL",
+      "sector": "Metal Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -23,7 +34,7 @@
       "total": 11
     },
     "Commodities Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Consumer Durables Index": {
@@ -67,7 +78,7 @@
       "total": 10
     },
     "Metal Index": {
-      "ok": 15,
+      "ok": 14,
       "total": 15
     },
     "Oil & Gas Index": {
