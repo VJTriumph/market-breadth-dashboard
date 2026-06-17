@@ -140,47 +140,77 @@ tbody tr:hover td { background: #f8fbff; }
 <script>
 const dashboardData = [
   {
-    "sector": "Pvt Bank Index",
+    "sector": "Bank Index",
     "p20": 100.0,
     "p50": 100.0,
-    "p200": 80.0,
-    "prsi": 90.0,
-    "pweek": 90.0,
-    "stocks_ok": 10,
-    "stocks_total": 10,
-    "edge": 91.0,
+    "p200": 71.43,
+    "prsi": 100.0,
+    "pweek": 100.0,
+    "stocks_ok": 14,
+    "stocks_total": 14,
+    "edge": 92.86,
     "rank": 1,
-    "relative": 37.87,
+    "relative": 32.89,
     "status": "Strong",
     "data_warning": "OK"
   },
   {
-    "sector": "Bank Index",
-    "p20": 92.86,
-    "p50": 85.71,
-    "p200": 71.43,
-    "prsi": 85.71,
-    "pweek": 64.29,
-    "stocks_ok": 13,
-    "stocks_total": 14,
-    "edge": 78.93,
+    "sector": "Pvt Bank Index",
+    "p20": 100.0,
+    "p50": 100.0,
+    "p200": 70.0,
+    "prsi": 100.0,
+    "pweek": 100.0,
+    "stocks_ok": 10,
+    "stocks_total": 10,
+    "edge": 92.5,
     "rank": 2,
-    "relative": 25.8,
+    "relative": 32.53,
     "status": "Strong",
-    "data_warning": "WARNING"
+    "data_warning": "OK"
+  },
+  {
+    "sector": "PSU Bank Index",
+    "p20": 100.0,
+    "p50": 100.0,
+    "p200": 66.67,
+    "prsi": 100.0,
+    "pweek": 100.0,
+    "stocks_ok": 12,
+    "stocks_total": 12,
+    "edge": 91.67,
+    "rank": 3,
+    "relative": 31.7,
+    "status": "Strong",
+    "data_warning": "OK"
   },
   {
     "sector": "Realty Index",
     "p20": 90.0,
     "p50": 90.0,
     "p200": 30.0,
-    "prsi": 90.0,
-    "pweek": 80.0,
+    "prsi": 70.0,
+    "pweek": 100.0,
     "stocks_ok": 10,
     "stocks_total": 10,
     "edge": 73.0,
-    "rank": 3,
-    "relative": 19.87,
+    "rank": 4,
+    "relative": 13.03,
+    "status": "Strong",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "Media Index",
+    "p20": 70.0,
+    "p50": 60.0,
+    "p200": 50.0,
+    "prsi": 80.0,
+    "pweek": 80.0,
+    "stocks_ok": 10,
+    "stocks_total": 10,
+    "edge": 67.0,
+    "rank": 5,
+    "relative": 7.03,
     "status": "Strong",
     "data_warning": "OK"
   },
@@ -188,14 +218,44 @@ const dashboardData = [
     "sector": "Oil & Gas Index",
     "p20": 80.0,
     "p50": 80.0,
-    "p200": 53.33,
-    "prsi": 66.67,
+    "p200": 46.67,
+    "prsi": 60.0,
     "pweek": 73.33,
     "stocks_ok": 15,
     "stocks_total": 15,
-    "edge": 69.33,
-    "rank": 4,
-    "relative": 16.2,
+    "edge": 66.33,
+    "rank": 6,
+    "relative": 6.36,
+    "status": "Strong",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "Infrastructure Index",
+    "p20": 80.0,
+    "p50": 73.33,
+    "p200": 53.33,
+    "prsi": 50.0,
+    "pweek": 80.0,
+    "stocks_ok": 30,
+    "stocks_total": 30,
+    "edge": 66.0,
+    "rank": 7,
+    "relative": 6.03,
+    "status": "Strong",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "Financial Services Index",
+    "p20": 85.0,
+    "p50": 65.0,
+    "p200": 40.0,
+    "prsi": 55.0,
+    "pweek": 95.0,
+    "stocks_ok": 20,
+    "stocks_total": 20,
+    "edge": 65.75,
+    "rank": 8,
+    "relative": 5.78,
     "status": "Strong",
     "data_warning": "OK"
   },
@@ -209,368 +269,217 @@ const dashboardData = [
     "stocks_ok": 15,
     "stocks_total": 15,
     "edge": 65.33,
-    "rank": 5,
-    "relative": 12.2,
-    "status": "Strong",
-    "data_warning": "OK"
-  },
-  {
-    "sector": "Infrastructure Index",
-    "p20": 76.67,
-    "p50": 73.33,
-    "p200": 53.33,
-    "prsi": 53.33,
-    "pweek": 70.0,
-    "stocks_ok": 29,
-    "stocks_total": 30,
-    "edge": 64.16,
-    "rank": 6,
-    "relative": 11.03,
-    "status": "Strong",
-    "data_warning": "WARNING"
-  },
-  {
-    "sector": "PSU Bank Index",
-    "p20": 91.67,
-    "p50": 58.33,
-    "p200": 50.0,
-    "prsi": 83.33,
-    "pweek": 41.67,
-    "stocks_ok": 11,
-    "stocks_total": 12,
-    "edge": 62.92,
-    "rank": 7,
-    "relative": 9.79,
-    "status": "Strong",
-    "data_warning": "WARNING"
-  },
-  {
-    "sector": "Consumption Index",
-    "p20": 83.33,
-    "p50": 60.0,
-    "p200": 36.67,
-    "prsi": 56.67,
-    "pweek": 83.33,
-    "stocks_ok": 30,
-    "stocks_total": 30,
-    "edge": 61.67,
-    "rank": 8,
-    "relative": 8.54,
-    "status": "Strong",
-    "data_warning": "OK"
-  },
-  {
-    "sector": "Media Index",
-    "p20": 70.0,
-    "p50": 60.0,
-    "p200": 50.0,
-    "prsi": 60.0,
-    "pweek": 70.0,
-    "stocks_ok": 10,
-    "stocks_total": 10,
-    "edge": 61.0,
     "rank": 9,
-    "relative": 7.87,
+    "relative": 5.36,
     "status": "Strong",
     "data_warning": "OK"
-  },
-  {
-    "sector": "Financial Services Index",
-    "p20": 80.0,
-    "p50": 65.0,
-    "p200": 45.0,
-    "prsi": 45.0,
-    "pweek": 75.0,
-    "stocks_ok": 19,
-    "stocks_total": 20,
-    "edge": 60.25,
-    "rank": 10,
-    "relative": 7.12,
-    "status": "Strong",
-    "data_warning": "WARNING"
   },
   {
     "sector": "Service Sector Index",
-    "p20": 66.67,
+    "p20": 70.0,
     "p50": 63.33,
-    "p200": 43.33,
-    "prsi": 50.0,
-    "pweek": 63.33,
-    "stocks_ok": 28,
+    "p200": 40.0,
+    "prsi": 70.0,
+    "pweek": 86.67,
+    "stocks_ok": 30,
     "stocks_total": 30,
-    "edge": 56.16,
+    "edge": 64.5,
+    "rank": 10,
+    "relative": 4.53,
+    "status": "Strong",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "Consumption Index",
+    "p20": 86.67,
+    "p50": 66.67,
+    "p200": 36.67,
+    "prsi": 63.33,
+    "pweek": 80.0,
+    "stocks_ok": 30,
+    "stocks_total": 30,
+    "edge": 64.17,
     "rank": 11,
-    "relative": 3.03,
-    "status": "Moderate",
-    "data_warning": "WARNING"
+    "relative": 4.2,
+    "status": "Strong",
+    "data_warning": "OK"
   },
   {
     "sector": "Consumer Durables Index",
-    "p20": 80.0,
-    "p50": 40.0,
-    "p200": 26.67,
-    "prsi": 53.33,
+    "p20": 93.33,
+    "p50": 53.33,
+    "p200": 33.33,
+    "prsi": 60.0,
     "pweek": 93.33,
     "stocks_ok": 15,
     "stocks_total": 15,
-    "edge": 56.0,
+    "edge": 63.66,
     "rank": 12,
-    "relative": 2.87,
+    "relative": 3.69,
+    "status": "Strong",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "Energy Index",
+    "p20": 55.0,
+    "p50": 57.5,
+    "p200": 67.5,
+    "prsi": 30.0,
+    "pweek": 70.0,
+    "stocks_ok": 40,
+    "stocks_total": 40,
+    "edge": 56.62,
+    "rank": 13,
+    "relative": -3.35,
     "status": "Moderate",
     "data_warning": "OK"
   },
   {
     "sector": "MNC Index",
-    "p20": 60.0,
-    "p50": 56.67,
-    "p200": 43.33,
-    "prsi": 30.0,
-    "pweek": 63.33,
-    "stocks_ok": 29,
-    "stocks_total": 30,
-    "edge": 49.83,
-    "rank": 13,
-    "relative": -3.3,
-    "status": "Moderate",
-    "data_warning": "WARNING"
-  },
-  {
-    "sector": "Energy Index",
-    "p20": 47.5,
-    "p50": 55.0,
-    "p200": 67.5,
-    "prsi": 27.5,
-    "pweek": 42.5,
-    "stocks_ok": 38,
-    "stocks_total": 40,
-    "edge": 49.0,
-    "rank": 14,
-    "relative": -4.13,
-    "status": "Moderate",
-    "data_warning": "WARNING"
-  },
-  {
-    "sector": "Pharma Index",
-    "p20": 30.0,
-    "p50": 65.0,
-    "p200": 80.0,
-    "prsi": 15.0,
-    "pweek": 15.0,
-    "stocks_ok": 20,
-    "stocks_total": 20,
-    "edge": 43.5,
-    "rank": 15,
-    "relative": -9.63,
-    "status": "Moderate",
-    "data_warning": "OK"
-  },
-  {
-    "sector": "Healthcare Index",
-    "p20": 35.0,
-    "p50": 65.0,
-    "p200": 70.0,
-    "prsi": 20.0,
-    "pweek": 15.0,
-    "stocks_ok": 20,
-    "stocks_total": 20,
-    "edge": 42.75,
-    "rank": 16,
-    "relative": -10.38,
-    "status": "Moderate",
-    "data_warning": "OK"
-  },
-  {
-    "sector": "FMCG index",
-    "p20": 73.33,
-    "p50": 26.67,
-    "p200": 20.0,
+    "p20": 70.0,
+    "p50": 66.67,
+    "p200": 46.67,
     "prsi": 26.67,
     "pweek": 73.33,
-    "stocks_ok": 14,
-    "stocks_total": 15,
-    "edge": 41.33,
-    "rank": 17,
-    "relative": -11.8,
-    "status": "Moderate",
-    "data_warning": "WARNING"
-  },
-  {
-    "sector": "Commodities Index",
-    "p20": 40.0,
-    "p50": 40.0,
-    "p200": 46.67,
-    "prsi": 16.67,
-    "pweek": 36.67,
-    "stocks_ok": 27,
+    "stocks_ok": 30,
     "stocks_total": 30,
-    "edge": 36.34,
-    "rank": 18,
-    "relative": -16.79,
-    "status": "Weak",
-    "data_warning": "WARNING"
+    "edge": 55.5,
+    "rank": 14,
+    "relative": -4.47,
+    "status": "Moderate",
+    "data_warning": "OK"
   },
   {
     "sector": "PSE Index",
-    "p20": 40.0,
-    "p50": 30.0,
-    "p200": 35.0,
-    "prsi": 20.0,
-    "pweek": 45.0,
-    "stocks_ok": 19,
+    "p20": 55.0,
+    "p50": 40.0,
+    "p200": 50.0,
+    "prsi": 35.0,
+    "pweek": 75.0,
+    "stocks_ok": 20,
     "stocks_total": 20,
-    "edge": 33.75,
-    "rank": 19,
-    "relative": -19.38,
-    "status": "Weak",
-    "data_warning": "WARNING"
+    "edge": 50.75,
+    "rank": 15,
+    "relative": -9.22,
+    "status": "Moderate",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "IT Index",
+    "p20": 40.0,
+    "p50": 40.0,
+    "p200": 10.0,
+    "prsi": 60.0,
+    "pweek": 80.0,
+    "stocks_ok": 10,
+    "stocks_total": 10,
+    "edge": 44.5,
+    "rank": 16,
+    "relative": -15.47,
+    "status": "Moderate",
+    "data_warning": "OK"
   },
   {
     "sector": "Metal Index",
     "p20": 26.67,
     "p50": 26.67,
-    "p200": 73.33,
-    "prsi": 6.67,
-    "pweek": 20.0,
-    "stocks_ok": 14,
+    "p200": 80.0,
+    "prsi": 13.33,
+    "pweek": 60.0,
+    "stocks_ok": 15,
     "stocks_total": 15,
-    "edge": 33.0,
-    "rank": 20,
-    "relative": -20.13,
-    "status": "Weak",
-    "data_warning": "WARNING"
+    "edge": 44.0,
+    "rank": 17,
+    "relative": -15.97,
+    "status": "Moderate",
+    "data_warning": "OK"
   },
   {
-    "sector": "IT Index",
-    "p20": 20.0,
-    "p50": 30.0,
-    "p200": 10.0,
-    "prsi": 40.0,
-    "pweek": 30.0,
-    "stocks_ok": 9,
-    "stocks_total": 10,
-    "edge": 25.5,
-    "rank": 21,
-    "relative": -27.63,
+    "sector": "Pharma Index",
+    "p20": 25.0,
+    "p50": 60.0,
+    "p200": 80.0,
+    "prsi": 15.0,
+    "pweek": 15.0,
+    "stocks_ok": 20,
+    "stocks_total": 20,
+    "edge": 41.75,
+    "rank": 18,
+    "relative": -18.22,
+    "status": "Moderate",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "Commodities Index",
+    "p20": 36.67,
+    "p50": 40.0,
+    "p200": 50.0,
+    "prsi": 10.0,
+    "pweek": 63.33,
+    "stocks_ok": 30,
+    "stocks_total": 30,
+    "edge": 40.67,
+    "rank": 19,
+    "relative": -19.3,
+    "status": "Moderate",
+    "data_warning": "OK"
+  },
+  {
+    "sector": "FMCG index",
+    "p20": 66.67,
+    "p50": 33.33,
+    "p200": 26.67,
+    "prsi": 20.0,
+    "pweek": 53.33,
+    "stocks_ok": 15,
+    "stocks_total": 15,
+    "edge": 38.0,
+    "rank": 20,
+    "relative": -21.97,
     "status": "Weak",
-    "data_warning": "WARNING"
+    "data_warning": "OK"
+  },
+  {
+    "sector": "Healthcare Index",
+    "p20": 20.0,
+    "p50": 60.0,
+    "p200": 70.0,
+    "prsi": 10.0,
+    "pweek": 15.0,
+    "stocks_ok": 20,
+    "stocks_total": 20,
+    "edge": 37.5,
+    "rank": 21,
+    "relative": -22.47,
+    "status": "Weak",
+    "data_warning": "OK"
   },
   {
     "sector": "CPSE Index",
-    "p20": 9.09,
-    "p50": 0.0,
-    "p200": 36.36,
-    "prsi": 0.0,
-    "pweek": 18.18,
-    "stocks_ok": 9,
+    "p20": 36.36,
+    "p50": 9.09,
+    "p200": 54.55,
+    "prsi": 18.18,
+    "pweek": 63.64,
+    "stocks_ok": 11,
     "stocks_total": 11,
-    "edge": 14.09,
+    "edge": 37.27,
     "rank": 22,
-    "relative": -39.04,
-    "status": "No Edge",
-    "data_warning": "WARNING"
+    "relative": -22.7,
+    "status": "Weak",
+    "data_warning": "OK"
   }
 ]
 const qualityData = {
-  "run_time": "2026-06-16 18:05 IST",
-  "most_recent_bar": "2026-06-16",
+  "run_time": "2026-06-17 16:09 IST",
+  "most_recent_bar": "2026-06-17",
   "total_stocks": 232,
-  "ok_stocks": 404,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 18,
+  "nodata_count": 0,
   "stale_count": 0,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "COCHINSHIP",
-      "sector": "CPSE Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NBCC",
-      "sector": "CPSE Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "PNB",
-      "sector": "Bank Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NMDC",
-      "sector": "Commodities Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "ULTRACEMCO",
-      "sector": "Commodities Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "UPL",
-      "sector": "Commodities Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NAVA",
-      "sector": "Energy Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NTPCGREEN",
-      "sector": "Energy Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "MARICO",
-      "sector": "FMCG index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "HDFCLIFE",
-      "sector": "Financial Services Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "WIPRO",
-      "sector": "IT Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "ULTRACEMCO",
-      "sector": "Infrastructure Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NAM-INDIA",
-      "sector": "MNC Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NMDC",
-      "sector": "Metal Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NMDC",
-      "sector": "PSE Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "PNB",
-      "sector": "PSU Bank Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "HDFCLIFE",
-      "sector": "Service Sector Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "WIPRO",
-      "sector": "Service Sector Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -578,15 +487,15 @@ const qualityData = {
       "total": 15
     },
     "Bank Index": {
-      "ok": 13,
+      "ok": 14,
       "total": 14
     },
     "CPSE Index": {
-      "ok": 9,
+      "ok": 11,
       "total": 11
     },
     "Commodities Index": {
-      "ok": 27,
+      "ok": 30,
       "total": 30
     },
     "Consumer Durables Index": {
@@ -598,15 +507,15 @@ const qualityData = {
       "total": 30
     },
     "Energy Index": {
-      "ok": 38,
+      "ok": 40,
       "total": 40
     },
     "FMCG index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "Healthcare Index": {
@@ -614,15 +523,15 @@ const qualityData = {
       "total": 20
     },
     "IT Index": {
-      "ok": 9,
+      "ok": 10,
       "total": 10
     },
     "Infrastructure Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "MNC Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "Media Index": {
@@ -630,7 +539,7 @@ const qualityData = {
       "total": 10
     },
     "Metal Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Oil & Gas Index": {
@@ -638,11 +547,11 @@ const qualityData = {
       "total": 15
     },
     "PSE Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "PSU Bank Index": {
-      "ok": 11,
+      "ok": 12,
       "total": 12
     },
     "Pharma Index": {
@@ -658,7 +567,7 @@ const qualityData = {
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 28,
+      "ok": 30,
       "total": 30
     }
   }

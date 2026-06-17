@@ -1,104 +1,13 @@
 {
-  "run_time": "2026-06-16 18:05 IST",
-  "most_recent_bar": "2026-06-16",
+  "run_time": "2026-06-17 16:09 IST",
+  "most_recent_bar": "2026-06-17",
   "total_stocks": 232,
-  "ok_stocks": 404,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 18,
+  "nodata_count": 0,
   "stale_count": 0,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "COCHINSHIP",
-      "sector": "CPSE Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NBCC",
-      "sector": "CPSE Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "PNB",
-      "sector": "Bank Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NMDC",
-      "sector": "Commodities Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "ULTRACEMCO",
-      "sector": "Commodities Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "UPL",
-      "sector": "Commodities Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NAVA",
-      "sector": "Energy Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NTPCGREEN",
-      "sector": "Energy Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "MARICO",
-      "sector": "FMCG index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "HDFCLIFE",
-      "sector": "Financial Services Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "WIPRO",
-      "sector": "IT Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "ULTRACEMCO",
-      "sector": "Infrastructure Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NAM-INDIA",
-      "sector": "MNC Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NMDC",
-      "sector": "Metal Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "NMDC",
-      "sector": "PSE Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "PNB",
-      "sector": "PSU Bank Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "HDFCLIFE",
-      "sector": "Service Sector Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "WIPRO",
-      "sector": "Service Sector Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -106,15 +15,15 @@
       "total": 15
     },
     "Bank Index": {
-      "ok": 13,
+      "ok": 14,
       "total": 14
     },
     "CPSE Index": {
-      "ok": 9,
+      "ok": 11,
       "total": 11
     },
     "Commodities Index": {
-      "ok": 27,
+      "ok": 30,
       "total": 30
     },
     "Consumer Durables Index": {
@@ -126,15 +35,15 @@
       "total": 30
     },
     "Energy Index": {
-      "ok": 38,
+      "ok": 40,
       "total": 40
     },
     "FMCG index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "Healthcare Index": {
@@ -142,15 +51,15 @@
       "total": 20
     },
     "IT Index": {
-      "ok": 9,
+      "ok": 10,
       "total": 10
     },
     "Infrastructure Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "MNC Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "Media Index": {
@@ -158,7 +67,7 @@
       "total": 10
     },
     "Metal Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Oil & Gas Index": {
@@ -166,11 +75,11 @@
       "total": 15
     },
     "PSE Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "PSU Bank Index": {
-      "ok": 11,
+      "ok": 12,
       "total": 12
     },
     "Pharma Index": {
@@ -186,7 +95,7 @@
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 28,
+      "ok": 30,
       "total": 30
     }
   }
