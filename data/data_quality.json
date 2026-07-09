@@ -1,24 +1,13 @@
 {
-  "run_time": "2026-07-09 15:39 IST",
+  "run_time": "2026-07-09 15:59 IST",
   "most_recent_bar": "2026-07-09",
   "total_stocks": 232,
-  "ok_stocks": 420,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 2,
+  "nodata_count": 0,
   "stale_count": 0,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "LAURUSLABS",
-      "sector": "Healthcare Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "LAURUSLABS",
-      "sector": "Pharma Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -58,7 +47,7 @@
       "total": 20
     },
     "Healthcare Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "IT Index": {
@@ -94,7 +83,7 @@
       "total": 12
     },
     "Pharma Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "Pvt Bank Index": {
