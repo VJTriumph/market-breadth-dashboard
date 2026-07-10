@@ -1,17 +1,23 @@
 {
-  "run_time": "2026-07-10 15:08 IST",
+  "run_time": "2026-07-10 15:32 IST",
   "most_recent_bar": "2026-07-10",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "EXIDEIND",
+      "sector": "Auto Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
-      "ok": 15,
+      "ok": 14,
       "total": 15
     },
     "Bank Index": {
