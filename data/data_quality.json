@@ -1,13 +1,24 @@
 {
-  "run_time": "2026-07-16 14:30 IST",
+  "run_time": "2026-07-16 15:04 IST",
   "most_recent_bar": "2026-07-16",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "SHRIRAMFIN",
+      "sector": "Financial Services Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "SHRIRAMFIN",
+      "sector": "Service Sector Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -43,7 +54,7 @@
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "Healthcare Index": {
@@ -95,7 +106,7 @@
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     }
   }
