@@ -1,13 +1,19 @@
 {
-  "run_time": "2026-07-22 14:31 IST",
+  "run_time": "2026-07-22 15:07 IST",
   "most_recent_bar": "2026-07-22",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "INDIANB",
+      "sector": "PSU Bank Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [],
   "sector_counts": {
     "Auto Index": {
@@ -79,7 +85,7 @@
       "total": 20
     },
     "PSU Bank Index": {
-      "ok": 12,
+      "ok": 11,
       "total": 12
     },
     "Pharma Index": {
