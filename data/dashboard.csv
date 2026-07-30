@@ -1,23 +1,23 @@
 Sector,20MA,50MA,200MA,RSI>50,WeeklyReturn,StocksOK,StocksTotal,EdgeScore,Rank,RelativeEdge,Status,DataWarning
-IT Index,100.0,100.0,40.0,100.0,100.0,10,10,85.0,1,28.23,Strong,OK
-Pharma Index,80.0,95.0,95.0,75.0,60.0,20,20,81.75,2,24.98,Strong,OK
-Healthcare Index,70.0,85.0,90.0,70.0,60.0,20,20,76.0,3,19.23,Strong,OK
-Auto Index,80.0,86.67,60.0,80.0,60.0,15,15,72.33,4,15.56,Strong,OK
-Consumption Index,80.0,80.0,56.67,80.0,66.67,30,30,71.5,5,14.73,Strong,OK
-Media Index,60.0,80.0,60.0,60.0,70.0,10,10,66.0,6,9.23,Strong,OK
-Realty Index,70.0,80.0,70.0,60.0,50.0,10,10,66.0,7,9.23,Strong,OK
-Consumer Durables Index,66.67,73.33,60.0,66.67,60.0,15,15,65.0,8,8.23,Strong,OK
-Service Sector Index,66.67,70.0,53.33,73.33,50.0,30,30,62.0,9,5.23,Strong,OK
-Financial Services Index,65.0,70.0,50.0,70.0,55.0,20,20,61.25,10,4.48,Strong,OK
-MNC Index,63.33,70.0,60.0,63.33,33.33,30,30,57.83,11,1.06,Moderate,OK
-Pvt Bank Index,60.0,60.0,70.0,50.0,40.0,10,10,56.5,12,-0.27,Moderate,OK
-Metal Index,73.33,33.33,53.33,66.67,46.67,15,15,53.67,13,-3.1,Moderate,OK
-Infrastructure Index,53.33,50.0,56.67,66.67,40.0,30,30,53.5,14,-3.27,Moderate,OK
-FMCG index,66.67,73.33,33.33,53.33,46.67,15,15,53.0,15,-3.77,Moderate,OK
-Oil & Gas Index,53.33,53.33,53.33,66.67,26.67,15,15,50.67,16,-6.1,Moderate,OK
-Bank Index,57.14,64.29,57.14,42.86,28.57,14,14,50.0,17,-6.77,Moderate,OK
-PSE Index,50.0,40.0,40.0,65.0,35.0,20,20,45.5,18,-11.27,Moderate,OK
-Commodities Index,53.33,40.0,43.33,63.33,26.67,30,30,44.83,19,-11.94,Moderate,OK
-Energy Index,27.5,27.5,50.0,45.0,12.5,40,40,33.62,20,-23.15,Weak,OK
-PSU Bank Index,33.33,33.33,25.0,41.67,8.33,12,12,27.92,21,-28.85,Weak,OK
-CPSE Index,9.09,9.09,18.18,18.18,18.18,11,11,15.0,22,-41.77,No Edge,OK
+IT Index,90.0,100.0,40.0,90.0,100.0,10,10,81.5,1,25.54,Strong,OK
+Auto Index,93.33,86.67,66.67,80.0,73.33,15,15,78.67,2,22.71,Strong,OK
+Consumer Durables Index,80.0,86.67,60.0,80.0,86.67,15,15,77.67,3,21.71,Strong,OK
+Pharma Index,65.0,85.0,95.0,70.0,50.0,20,20,74.5,4,18.54,Strong,OK
+Consumption Index,80.0,76.67,60.0,66.67,80.0,30,30,71.67,5,15.71,Strong,OK
+Media Index,70.0,70.0,60.0,70.0,90.0,10,10,71.5,6,15.54,Strong,OK
+Healthcare Index,55.0,80.0,90.0,60.0,50.0,20,20,68.75,7,12.79,Strong,OK
+Metal Index,80.0,40.0,53.33,60.0,73.33,15,15,60.0,8,4.04,Strong,OK
+Service Sector Index,63.33,70.0,53.33,56.67,56.67,30,30,59.5,9,3.54,Moderate,OK
+Realty Index,60.0,80.0,70.0,20.0,60.0,10,10,58.5,10,2.54,Moderate,OK
+MNC Index,60.0,66.67,60.0,53.33,43.33,30,30,56.67,11,0.71,Moderate,OK
+Financial Services Index,50.0,65.0,45.0,45.0,65.0,20,20,53.75,12,-2.21,Moderate,OK
+Pvt Bank Index,50.0,60.0,70.0,40.0,40.0,10,10,53.0,13,-2.96,Moderate,OK
+Bank Index,42.86,64.29,57.14,42.86,42.86,14,14,50.72,14,-5.24,Moderate,OK
+FMCG index,60.0,53.33,33.33,53.33,60.0,15,15,50.66,15,-5.3,Moderate,OK
+Infrastructure Index,53.33,50.0,60.0,36.67,43.33,30,30,49.0,16,-6.96,Moderate,OK
+Oil & Gas Index,53.33,53.33,53.33,46.67,33.33,15,15,48.0,17,-7.96,Moderate,OK
+PSE Index,50.0,45.0,45.0,55.0,30.0,20,20,44.75,18,-11.21,Moderate,OK
+Commodities Index,50.0,36.67,43.33,50.0,43.33,30,30,44.33,19,-11.63,Moderate,OK
+Energy Index,30.0,27.5,52.5,35.0,20.0,40,40,34.12,20,-21.84,Weak,OK
+PSU Bank Index,25.0,25.0,25.0,16.67,25.0,12,12,23.33,21,-32.63,Weak,OK
+CPSE Index,18.18,18.18,27.27,27.27,9.09,11,11,20.45,22,-35.51,Weak,OK
