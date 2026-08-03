@@ -1,35 +1,24 @@
 {
-  "run_time": "2026-07-31 15:21 IST",
-  "most_recent_bar": "2026-07-31",
+  "run_time": "2026-08-03 15:22 IST",
+  "most_recent_bar": "2026-08-03",
   "total_stocks": 232,
-  "ok_stocks": 420,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 2,
+  "nodata_count": 0,
   "stale_count": 1,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "EICHERMOT",
-      "sector": "Auto Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "EICHERMOT",
-      "sector": "Consumption Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
       "last_date": "2026-07-23",
-      "days_behind": 8
+      "days_behind": 11
     }
   ],
   "sector_counts": {
     "Auto Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Bank Index": {
@@ -49,7 +38,7 @@
       "total": 15
     },
     "Consumption Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "Energy Index": {
