@@ -1,34 +1,13 @@
 {
-  "run_time": "2026-08-04 14:57 IST",
+  "run_time": "2026-08-04 15:25 IST",
   "most_recent_bar": "2026-08-04",
   "total_stocks": 232,
-  "ok_stocks": 418,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 4,
+  "nodata_count": 0,
   "stale_count": 1,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "RELIANCE",
-      "sector": "Commodities Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "RELIANCE",
-      "sector": "Energy Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "RELIANCE",
-      "sector": "Infrastructure Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "RELIANCE",
-      "sector": "Oil & Gas Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [
     {
       "stock": "JBCHEPHARM",
@@ -51,7 +30,7 @@
       "total": 11
     },
     "Commodities Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "Consumer Durables Index": {
@@ -63,7 +42,7 @@
       "total": 30
     },
     "Energy Index": {
-      "ok": 39,
+      "ok": 40,
       "total": 40
     },
     "FMCG index": {
@@ -83,7 +62,7 @@
       "total": 10
     },
     "Infrastructure Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     },
     "MNC Index": {
@@ -99,7 +78,7 @@
       "total": 15
     },
     "Oil & Gas Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "PSE Index": {
