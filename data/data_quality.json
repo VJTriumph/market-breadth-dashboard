@@ -1,19 +1,30 @@
 {
-  "run_time": "2026-08-11 14:20 IST",
-  "most_recent_bar": "2026-08-11",
+  "run_time": "2026-08-12 13:54 IST",
+  "most_recent_bar": "2026-08-12",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 2,
   "stale_count": 1,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "RECLTD",
+      "sector": "Financial Services Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "RECLTD",
+      "sector": "PSE Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
       "last_date": "2026-07-23",
-      "days_behind": 19
+      "days_behind": 20
     }
   ],
   "sector_counts": {
@@ -50,7 +61,7 @@
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "Healthcare Index": {
@@ -82,7 +93,7 @@
       "total": 15
     },
     "PSE Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "PSU Bank Index": {
