@@ -1,6 +1,6 @@
 {
-  "run_time": "2026-08-13 14:22 IST",
-  "most_recent_bar": "2026-08-13",
+  "run_time": "2026-08-14 13:50 IST",
+  "most_recent_bar": "2026-08-14",
   "total_stocks": 232,
   "ok_stocks": 422,
   "missing_count": 0,
@@ -13,7 +13,7 @@
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
       "last_date": "2026-07-23",
-      "days_behind": 21
+      "days_behind": 22
     }
   ],
   "sector_counts": {
