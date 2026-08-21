@@ -1,25 +1,19 @@
 {
-  "run_time": "2026-08-20 13:49 IST",
-  "most_recent_bar": "2026-08-20",
+  "run_time": "2026-08-21 13:24 IST",
+  "most_recent_bar": "2026-08-21",
   "total_stocks": 232,
-  "ok_stocks": 421,
+  "ok_stocks": 422,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 0,
   "stale_count": 1,
   "missing": [],
-  "nodata": [
-    {
-      "stock": "HINDZINC",
-      "sector": "Metal Index",
-      "reason": "Insufficient bars (<10)"
-    }
-  ],
+  "nodata": [],
   "stale": [
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
       "last_date": "2026-07-23",
-      "days_behind": 28
+      "days_behind": 29
     }
   ],
   "sector_counts": {
@@ -80,7 +74,7 @@
       "total": 10
     },
     "Metal Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "Oil & Gas Index": {
