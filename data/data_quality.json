@@ -1,19 +1,45 @@
 {
-  "run_time": "2026-08-25 13:52 IST",
-  "most_recent_bar": "2026-08-25",
+  "run_time": "2026-08-26 13:31 IST",
+  "most_recent_bar": "2026-08-26",
   "total_stocks": 232,
-  "ok_stocks": 422,
+  "ok_stocks": 417,
   "missing_count": 0,
-  "nodata_count": 0,
+  "nodata_count": 5,
   "stale_count": 1,
   "missing": [],
-  "nodata": [],
+  "nodata": [
+    {
+      "stock": "GAIL",
+      "sector": "Energy Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "GAIL",
+      "sector": "Infrastructure Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "GAIL",
+      "sector": "Oil & Gas Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "GAIL",
+      "sector": "PSE Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "GAIL",
+      "sector": "Service Sector Index",
+      "reason": "Insufficient bars (<10)"
+    }
+  ],
   "stale": [
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
       "last_date": "2026-07-23",
-      "days_behind": 33
+      "days_behind": 34
     }
   ],
   "sector_counts": {
@@ -42,7 +68,7 @@
       "total": 30
     },
     "Energy Index": {
-      "ok": 40,
+      "ok": 39,
       "total": 40
     },
     "FMCG index": {
@@ -62,7 +88,7 @@
       "total": 10
     },
     "Infrastructure Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "MNC Index": {
@@ -78,11 +104,11 @@
       "total": 15
     },
     "Oil & Gas Index": {
-      "ok": 15,
+      "ok": 14,
       "total": 15
     },
     "PSE Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "PSU Bank Index": {
@@ -102,7 +128,7 @@
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     }
   }
