@@ -146,7 +146,7 @@ const dashboardData = [
     "p200": 60.0,
     "prsi": 50.0,
     "pweek": 25.0,
-    "stocks_ok": 19,
+    "stocks_ok": 18,
     "stocks_total": 20,
     "edge": 46.0,
     "rank": 1,
@@ -206,13 +206,13 @@ const dashboardData = [
     "p200": 45.0,
     "prsi": 35.0,
     "pweek": 20.0,
-    "stocks_ok": 20,
+    "stocks_ok": 19,
     "stocks_total": 20,
     "edge": 33.75,
     "rank": 5,
     "relative": 7.74,
     "status": "Weak",
-    "data_warning": "OK"
+    "data_warning": "WARNING"
   },
   {
     "sector": "Bank Index",
@@ -471,15 +471,25 @@ const dashboardData = [
   }
 ]
 const qualityData = {
-  "run_time": "2026-10-08 18:56 IST",
+  "run_time": "2026-10-08 19:11 IST",
   "most_recent_bar": "2026-10-07",
   "total_stocks": 232,
-  "ok_stocks": 421,
+  "ok_stocks": 419,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 3,
   "stale_count": 0,
   "missing": [],
   "nodata": [
+    {
+      "stock": "CIPLA",
+      "sector": "Healthcare Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "CIPLA",
+      "sector": "Pharma Index",
+      "reason": "Insufficient bars (<10)"
+    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -525,7 +535,7 @@ const qualityData = {
       "total": 20
     },
     "Healthcare Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "IT Index": {
@@ -561,7 +571,7 @@ const qualityData = {
       "total": 12
     },
     "Pharma Index": {
-      "ok": 19,
+      "ok": 18,
       "total": 20
     },
     "Pvt Bank Index": {
