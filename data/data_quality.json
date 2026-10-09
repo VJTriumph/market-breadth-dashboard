@@ -1,23 +1,13 @@
 {
-  "run_time": "2026-10-08 19:11 IST",
-  "most_recent_bar": "2026-10-07",
+  "run_time": "2026-10-09 18:26 IST",
+  "most_recent_bar": "2026-10-09",
   "total_stocks": 232,
-  "ok_stocks": 419,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 3,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
   "nodata": [
-    {
-      "stock": "CIPLA",
-      "sector": "Healthcare Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "CIPLA",
-      "sector": "Pharma Index",
-      "reason": "Insufficient bars (<10)"
-    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -63,7 +53,7 @@
       "total": 20
     },
     "Healthcare Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "IT Index": {
@@ -99,7 +89,7 @@
       "total": 12
     },
     "Pharma Index": {
-      "ok": 18,
+      "ok": 19,
       "total": 20
     },
     "Pvt Bank Index": {
