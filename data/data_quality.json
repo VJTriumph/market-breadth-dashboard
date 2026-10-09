@@ -1,13 +1,18 @@
 {
-  "run_time": "2026-10-09 18:26 IST",
-  "most_recent_bar": "2026-10-09",
+  "run_time": "2026-10-09 18:41 IST",
+  "most_recent_bar": "2026-10-08",
   "total_stocks": 232,
-  "ok_stocks": 421,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
   "nodata": [
+    {
+      "stock": "JPPOWER",
+      "sector": "Energy Index",
+      "reason": "Insufficient bars (<10)"
+    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -41,7 +46,7 @@
       "total": 30
     },
     "Energy Index": {
-      "ok": 40,
+      "ok": 39,
       "total": 40
     },
     "FMCG index": {
