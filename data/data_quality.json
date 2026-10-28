@@ -1,18 +1,13 @@
 {
-  "run_time": "2026-10-28 18:24 IST",
-  "most_recent_bar": "2026-10-28",
+  "run_time": "2026-10-28 18:41 IST",
+  "most_recent_bar": "2026-10-27",
   "total_stocks": 232,
-  "ok_stocks": 420,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 2,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
   "nodata": [
-    {
-      "stock": "UCOBANK",
-      "sector": "PSU Bank Index",
-      "reason": "Insufficient bars (<10)"
-    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -90,7 +85,7 @@
       "total": 20
     },
     "PSU Bank Index": {
-      "ok": 11,
+      "ok": 12,
       "total": 12
     },
     "Pharma Index": {
