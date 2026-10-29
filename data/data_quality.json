@@ -1,25 +1,15 @@
 {
-  "run_time": "2026-10-29 18:34 IST",
+  "run_time": "2026-10-29 18:50 IST",
   "most_recent_bar": "2026-10-28",
   "total_stocks": 232,
-  "ok_stocks": 419,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 3,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
   "nodata": [
     {
-      "stock": "MANKIND",
-      "sector": "Healthcare Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
       "stock": "JBCHEPHARM",
-      "sector": "Pharma Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "MANKIND",
       "sector": "Pharma Index",
       "reason": "Insufficient bars (<10)"
     }
@@ -63,7 +53,7 @@
       "total": 20
     },
     "Healthcare Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "IT Index": {
@@ -99,7 +89,7 @@
       "total": 12
     },
     "Pharma Index": {
-      "ok": 18,
+      "ok": 19,
       "total": 20
     },
     "Pvt Bank Index": {
