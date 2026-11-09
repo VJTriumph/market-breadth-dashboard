@@ -1,5 +1,5 @@
 {
-  "run_time": "2026-11-09 22:34 IST",
+  "run_time": "2026-11-09 22:54 IST",
   "most_recent_bar": "2026-11-09",
   "total_stocks": 232,
   "ok_stocks": 419,
@@ -9,18 +9,18 @@
   "missing": [],
   "nodata": [
     {
-      "stock": "PETRONET",
-      "sector": "Energy Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "PETRONET",
-      "sector": "Oil & Gas Index",
+      "stock": "HDFCLIFE",
+      "sector": "Financial Services Index",
       "reason": "Insufficient bars (<10)"
     },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "HDFCLIFE",
+      "sector": "Service Sector Index",
       "reason": "Insufficient bars (<10)"
     }
   ],
@@ -51,7 +51,7 @@
       "total": 30
     },
     "Energy Index": {
-      "ok": 39,
+      "ok": 40,
       "total": 40
     },
     "FMCG index": {
@@ -59,7 +59,7 @@
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "Healthcare Index": {
@@ -87,7 +87,7 @@
       "total": 15
     },
     "Oil & Gas Index": {
-      "ok": 14,
+      "ok": 15,
       "total": 15
     },
     "PSE Index": {
@@ -111,7 +111,7 @@
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     }
   }
