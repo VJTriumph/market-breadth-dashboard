@@ -1,26 +1,21 @@
 {
-  "run_time": "2026-11-09 22:54 IST",
+  "run_time": "2026-11-10 19:53 IST",
   "most_recent_bar": "2026-11-09",
   "total_stocks": 232,
-  "ok_stocks": 419,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 3,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
   "nodata": [
     {
-      "stock": "HDFCLIFE",
-      "sector": "Financial Services Index",
+      "stock": "CRISIL",
+      "sector": "MNC Index",
       "reason": "Insufficient bars (<10)"
     },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "HDFCLIFE",
-      "sector": "Service Sector Index",
       "reason": "Insufficient bars (<10)"
     }
   ],
@@ -59,7 +54,7 @@
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "Healthcare Index": {
@@ -75,7 +70,7 @@
       "total": 30
     },
     "MNC Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Media Index": {
@@ -111,7 +106,7 @@
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 29,
+      "ok": 30,
       "total": 30
     }
   }
