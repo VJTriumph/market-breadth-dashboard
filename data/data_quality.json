@@ -1,13 +1,23 @@
 {
-  "run_time": "2026-11-12 20:41 IST",
-  "most_recent_bar": "2026-11-11",
+  "run_time": "2026-11-13 19:54 IST",
+  "most_recent_bar": "2026-11-12",
   "total_stocks": 232,
-  "ok_stocks": 421,
+  "ok_stocks": 419,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 3,
   "stale_count": 0,
   "missing": [],
   "nodata": [
+    {
+      "stock": "INDHOTEL",
+      "sector": "Consumption Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "INDHOTEL",
+      "sector": "Infrastructure Index",
+      "reason": "Insufficient bars (<10)"
+    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -37,7 +47,7 @@
       "total": 15
     },
     "Consumption Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Energy Index": {
@@ -61,7 +71,7 @@
       "total": 10
     },
     "Infrastructure Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "MNC Index": {
