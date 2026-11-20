@@ -1,21 +1,16 @@
 {
-  "run_time": "2026-11-20 20:35 IST",
+  "run_time": "2026-11-20 20:57 IST",
   "most_recent_bar": "2026-11-19",
   "total_stocks": 232,
-  "ok_stocks": 420,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 2,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
   "nodata": [
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
-      "reason": "Insufficient bars (<10)"
-    },
-    {
-      "stock": "ANANTRAJ",
-      "sector": "Realty Index",
       "reason": "Insufficient bars (<10)"
     }
   ],
@@ -102,7 +97,7 @@
       "total": 10
     },
     "Realty Index": {
-      "ok": 9,
+      "ok": 10,
       "total": 10
     },
     "Service Sector Index": {
