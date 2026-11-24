@@ -1,5 +1,5 @@
 {
-  "run_time": "2026-11-24 00:08 IST",
+  "run_time": "2026-11-24 00:38 IST",
   "most_recent_bar": "2026-11-20",
   "total_stocks": 232,
   "ok_stocks": 420,
@@ -9,7 +9,7 @@
   "missing": [],
   "nodata": [
     {
-      "stock": "ICICIGI",
+      "stock": "LICHSGFIN",
       "sector": "Financial Services Index",
       "reason": "Insufficient bars (<10)"
     },
