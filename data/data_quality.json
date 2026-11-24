@@ -1,13 +1,18 @@
 {
-  "run_time": "2026-11-20 20:57 IST",
-  "most_recent_bar": "2026-11-19",
+  "run_time": "2026-11-24 00:08 IST",
+  "most_recent_bar": "2026-11-20",
   "total_stocks": 232,
-  "ok_stocks": 421,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
   "nodata": [
+    {
+      "stock": "ICICIGI",
+      "sector": "Financial Services Index",
+      "reason": "Insufficient bars (<10)"
+    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -49,7 +54,7 @@
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 20,
+      "ok": 19,
       "total": 20
     },
     "Healthcare Index": {
