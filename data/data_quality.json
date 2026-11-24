@@ -1,18 +1,13 @@
 {
-  "run_time": "2026-11-24 00:38 IST",
-  "most_recent_bar": "2026-11-20",
+  "run_time": "2026-11-24 22:38 IST",
+  "most_recent_bar": "2026-11-23",
   "total_stocks": 232,
-  "ok_stocks": 420,
+  "ok_stocks": 421,
   "missing_count": 0,
-  "nodata_count": 2,
+  "nodata_count": 1,
   "stale_count": 0,
   "missing": [],
   "nodata": [
-    {
-      "stock": "LICHSGFIN",
-      "sector": "Financial Services Index",
-      "reason": "Insufficient bars (<10)"
-    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -54,7 +49,7 @@
       "total": 15
     },
     "Financial Services Index": {
-      "ok": 19,
+      "ok": 20,
       "total": 20
     },
     "Healthcare Index": {
