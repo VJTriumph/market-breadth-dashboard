@@ -1,16 +1,31 @@
 {
-  "run_time": "2026-11-24 22:38 IST",
+  "run_time": "2026-11-24 22:56 IST",
   "most_recent_bar": "2026-11-23",
   "total_stocks": 232,
-  "ok_stocks": 421,
+  "ok_stocks": 418,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 4,
   "stale_count": 0,
   "missing": [],
   "nodata": [
     {
+      "stock": "INDIGO",
+      "sector": "Consumption Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "INDIGO",
+      "sector": "Infrastructure Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
+      "reason": "Insufficient bars (<10)"
+    },
+    {
+      "stock": "INDIGO",
+      "sector": "Service Sector Index",
       "reason": "Insufficient bars (<10)"
     }
   ],
@@ -37,7 +52,7 @@
       "total": 15
     },
     "Consumption Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Energy Index": {
@@ -61,7 +76,7 @@
       "total": 10
     },
     "Infrastructure Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "MNC Index": {
@@ -101,7 +116,7 @@
       "total": 10
     },
     "Service Sector Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     }
   }
