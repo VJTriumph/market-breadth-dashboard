@@ -1,13 +1,18 @@
 {
-  "run_time": "2026-11-25 22:12 IST",
-  "most_recent_bar": "2026-11-23",
+  "run_time": "2026-11-26 21:46 IST",
+  "most_recent_bar": "2026-11-25",
   "total_stocks": 232,
-  "ok_stocks": 421,
+  "ok_stocks": 420,
   "missing_count": 0,
-  "nodata_count": 1,
+  "nodata_count": 2,
   "stale_count": 0,
   "missing": [],
   "nodata": [
+    {
+      "stock": "PIDILITIND",
+      "sector": "Commodities Index",
+      "reason": "Insufficient bars (<10)"
+    },
     {
       "stock": "JBCHEPHARM",
       "sector": "Pharma Index",
@@ -29,7 +34,7 @@
       "total": 11
     },
     "Commodities Index": {
-      "ok": 30,
+      "ok": 29,
       "total": 30
     },
     "Consumer Durables Index": {
